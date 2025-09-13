@@ -1,13 +1,167 @@
 <!doctype html>
-<html>
+<html lang="es" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./assets/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paleta de colores — Amparo</title>
+  <!-- Tailwind via CDN (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Cocomat trial fonts (Light/Ultralight). Note: trial/non-commercial license. */
+    @font-face {
+      font-family: 'Cocomat';
+      src: url('./assets/fonts/cocomat/Cocomat Light-trial.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Cocomat';
+      src: url('./assets/fonts/cocomat/Cocomat Ultralight-trial.ttf') format('truetype');
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      /* Brand palette */
+      --brand: #3F0C1E;  /* vino */
+      --cream: #FFEBD8;  /* crema */
+      --tan:   #BB9476;  /* arena */
+      --beige: #ECE5D7;  /* beige claro */
+      --black: #0a0a0a;  /* negro base */
+      --white: #ffffff;  /* blanco */
+
+      /* Dark theme tokens */
+      --bg: var(--black);
+      --surface: #141414;
+      --text: #f5f5f5;
+      --muted: #a3a3a3;
+
+      --primary: var(--brand);
+      --secondary: var(--tan);
+      --accent: var(--cream);
+    }
+
+    /* Base typography and background */
+    html, body { height: 100%; }
+    body {
+      background: radial-gradient(1200px 800px at 10% -10%, color-mix(in oklab, var(--primary) 22%, #0000) 0%, transparent 60%),
+                  radial-gradient(1000px 700px at 110% 10%, color-mix(in oklab, var(--secondary) 18%, #0000) 0%, transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    /* Use Cocomat for display headings; keep body on system for legibility */
+    h1, h2, h3, h4 { font-family: 'Cocomat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; letter-spacing: 0.02em; }
+    h1 { font-weight: 300; }
+    h2, h3, h4 { font-weight: 300; }
+
+    .card {
+      background: color-mix(in oklab, var(--surface) 92%, #0000);
+      border: 1px solid color-mix(in oklab, var(--surface) 70%, #fff 8%);
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .chip { border-radius: 999px; border: 1px solid color-mix(in oklab, var(--surface) 70%, #fff 10%); }
+    .btn-brand { background: var(--primary); color: var(--cream); }
+    .btn-brand:hover { filter: brightness(1.08); }
+    .btn-cream { background: var(--cream); color: var(--brand); }
+    .btn-cream:hover { filter: brightness(0.98); }
+    .swatch { border: 1px solid rgba(255,255,255,.06); border-radius: 10px; }
+  </style>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="min-h-dvh">
+  <header class="py-6">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <h1 class="text-xl tracking-wide font-semibold">Amparo — Paleta de colores</h1>
+      <nav class="hidden sm:flex gap-2 text-sm text-gray-300">
+        <span class="chip px-3 py-1">Dark</span>
+        <span class="chip px-3 py-1">Brand-first</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pb-20">
+    <!-- Hero/Intro -->
+    <section class="mb-10">
+      <div class="card p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-semibold">Prueba de combinación</h2>
+        <p class="mt-2 text-sm md:text-base text-gray-300 max-w-2xl">
+          Esta página muestra la paleta base y algunos componentes para validar contraste, legibilidad y sensaciones en un tema oscuro.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button class="btn-brand px-4 py-2 rounded-md">Primario</button>
+          <button class="btn-cream px-4 py-2 rounded-md">Acento claro</button>
+          <button class="px-4 py-2 rounded-md border border-gray-700 text-gray-200 hover:bg-white/5">Outline</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swatches -->
+    <section class="mb-10">
+      <h3 class="text-lg font-medium mb-4">Colores</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--brand);"></div>
+          <div class="text-sm">brand<br><span class="text-xs text-gray-400">#3F0C1E</span></div>
+        </div>
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--cream);"></div>
+          <div class="text-sm">cream<br><span class="text-xs text-gray-400">#FFEBD8</span></div>
+        </div>
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--tan);"></div>
+          <div class="text-sm">tan<br><span class="text-xs text-gray-400">#BB9476</span></div>
+        </div>
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--beige);"></div>
+          <div class="text-sm">beige<br><span class="text-xs text-gray-400">#ECE5D7</span></div>
+        </div>
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--black);"></div>
+          <div class="text-sm">black<br><span class="text-xs text-gray-400">#0A0A0A</span></div>
+        </div>
+        <div class="swatch p-3">
+          <div class="h-16 rounded mb-2" style="background: var(--white);"></div>
+          <div class="text-sm">white<br><span class="text-xs text-gray-400">#FFFFFF</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="mb-10 grid gap-4 md:grid-cols-3">
+      <div class="card p-5">
+        <span class="text-xs uppercase tracking-wide text-gray-400">Tarjeta</span>
+        <h4 class="mt-1 text-lg font-semibold">Superficie</h4>
+        <p class="mt-2 text-sm text-gray-300">Fondo y borde en capas sutiles para crear profundidad sin perder elegancia.</p>
+        <div class="mt-4 flex gap-2">
+          <button class="btn-brand px-3 py-2 rounded-md text-sm">Acción</button>
+          <button class="px-3 py-2 rounded-md border border-gray-700 text-sm">Secundaria</button>
+        </div>
+      </div>
+      <div class="card p-5">
+        <span class="text-xs uppercase tracking-wide text-gray-400">Tipografía</span>
+        <h4 class="mt-1 text-lg font-semibold">Jerarquías</h4>
+        <p class="mt-2 text-sm text-gray-300">Títulos medianos, cuerpo claro y espacios generosos para lectura cómoda.</p>
+        <ul class="mt-3 text-sm list-disc list-inside text-gray-300">
+          <li>H1 32–36</li>
+          <li>H2 24–30</li>
+          <li>Body 14–16</li>
+        </ul>
+      </div>
+      <div class="card p-5">
+        <span class="text-xs uppercase tracking-wide text-gray-400">Contraste</span>
+        <h4 class="mt-1 text-lg font-semibold">Estados</h4>
+        <p class="mt-2 text-sm text-gray-300">Prueba hover en botones y enlaces. Observa el brillo y la elevación.</p>
+        <a class="mt-3 inline-block underline decoration-[var(--accent)]/40 hover:decoration-[var(--accent)]" href="#">Enlace de muestra</a>
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <p class="text-center text-xs text-gray-400">Pulsa F5 tras editar variables en &lt;style&gt; para ver cambios.</p>
+  </main>
 </body>
 </html>
