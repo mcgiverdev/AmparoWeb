@@ -98,6 +98,38 @@
           </div>
         </div>
       </div>
+
+      <!-- Imágenes Placeholder -->
+      <div class="mb-12">
+        <h4 class="text-xl font-medium mb-6">Imágenes Placeholder</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-4 text-center">
+            <img src="https://picsum.photos/200/120?random=20" alt="Hero Image" class="w-full h-30 object-cover rounded-lg mb-3">
+            <div class="text-sm font-medium">Hero Images</div>
+            <div class="text-xs text-muted">300x300px</div>
+          </div>
+          <div class="card p-4 text-center">
+            <img src="https://picsum.photos/120/80?random=21" alt="Service Image" class="w-full h-20 object-cover rounded-lg mb-3">
+            <div class="text-sm font-medium">Service Cards</div>
+            <div class="text-xs text-muted">280x160px</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="flex justify-center mb-3">
+              <img src="https://picsum.photos/60/60?random=22" alt="Profile" class="w-15 h-15 rounded-full object-cover">
+            </div>
+            <div class="text-sm font-medium">Profiles</div>
+            <div class="text-xs text-muted">40x40px - 60x60px</div>
+          </div>
+        </div>
+        <div class="mt-6 card p-4">
+          <h5 class="text-sm font-medium mb-3">Servicios de Placeholder:</h5>
+          <div class="space-y-2 text-xs">
+            <div><strong>Picsum Photos:</strong> <code class="bg-surface px-2 py-1 rounded">https://picsum.photos/300/300?random=1</code></div>
+            <div><strong>Placeholder.com:</strong> <code class="bg-surface px-2 py-1 rounded">https://via.placeholder.com/300x300/3F0C1E/FFEBD8?text=Coach</code></div>
+            <div><strong>Lorem Picsum con blur:</strong> <code class="bg-surface px-2 py-1 rounded">https://picsum.photos/300/300?random=1&blur=2</code></div>
+          </div>
+        </div>
+      </div>
       
       <!-- Paleta de colores -->
       <div class="mb-12">
@@ -288,10 +320,7 @@
           </div>
           <div class="hero-visual">
             <div class="hero-image">
-              <div class="flex flex-col items-center justify-center h-full">
-                <img src="./assets/images/logos/AM2.png" alt="Amparo Brand" class="h-32 w-auto mb-4 opacity-60">
-                <div class="text-sm text-muted">Logo alternativo para visuales</div>
-              </div>
+              <img src="https://picsum.photos/300/300?random=1" alt="Coaching Session" class="w-full h-full object-cover rounded-2xl">
             </div>
           </div>
         </div>
@@ -354,11 +383,7 @@
           </div>
           <div class="hero-visual">
             <div class="hero-image">
-              <div class="flex flex-col items-center justify-center h-full text-center">
-                <div class="text-4xl mb-4">🎯</div>
-                <div class="text-lg font-medium mb-2">Enfoque Personalizado</div>
-                <div class="text-sm text-muted">Cada sesión diseñada<br>para tus objetivos únicos</div>
-              </div>
+              <img src="https://picsum.photos/300/300?random=2" alt="Professional Growth" class="w-full h-full object-cover rounded-2xl">
             </div>
           </div>
         </div>
@@ -397,9 +422,9 @@
           <div class="cta-social">
             <div class="flex items-center gap-3 mb-4">
               <div class="flex -space-x-2">
-                <div class="w-8 h-8 bg-tan rounded-full border-2 border-surface flex items-center justify-center text-xs">M</div>
-                <div class="w-8 h-8 bg-cream rounded-full border-2 border-surface flex items-center justify-center text-xs text-brand">A</div>
-                <div class="w-8 h-8 bg-beige rounded-full border-2 border-surface flex items-center justify-center text-xs text-brand">C</div>
+                <img src="https://picsum.photos/32/32?random=11" alt="Cliente" class="w-8 h-8 rounded-full border-2 border-surface">
+                <img src="https://picsum.photos/32/32?random=12" alt="Cliente" class="w-8 h-8 rounded-full border-2 border-surface">
+                <img src="https://picsum.photos/32/32?random=13" alt="Cliente" class="w-8 h-8 rounded-full border-2 border-surface">
               </div>
               <div class="text-sm">
                 <div class="font-medium">+50 clientes satisfechos</div>
@@ -525,7 +550,7 @@
             "El coaching con Amparo transformó completamente mi perspectiva. Logré claridad en mis objetivos y confianza para alcanzarlos."
           </blockquote>
           <footer class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-tan rounded-full flex items-center justify-center text-sm font-medium">MG</div>
+            <img src="https://picsum.photos/40/40?random=10" alt="María García" class="w-10 h-10 rounded-full object-cover">
             <div>
               <cite class="text-sm font-medium not-italic">María García</cite>
               <div class="text-xs text-muted">Empresaria</div>
@@ -544,6 +569,17 @@
           <p class="text-sm text-muted mb-4">Sesiones individuales para desarrollo personal y profesional.</p>
           <div class="text-2xl font-medium text-cream mb-4">$120<span class="text-sm text-muted">/sesión</span></div>
           <button class="btn-primary btn-md w-full">Reservar</button>
+        </div>
+
+        <!-- Service card with image -->
+        <div class="service-card">
+          <div class="mb-4 overflow-hidden rounded-xl">
+            <img src="https://picsum.photos/280/160?random=3" alt="Coaching Empresarial" class="w-full h-40 object-cover">
+          </div>
+          <h4 class="text-lg font-medium mb-2">Coaching Empresarial</h4>
+          <p class="text-sm text-muted mb-4">Programas de liderazgo y desarrollo para equipos y ejecutivos.</p>
+          <div class="text-2xl font-medium text-cream mb-4">$200<span class="text-sm text-muted">/sesión</span></div>
+          <button class="btn-outline btn-md w-full">Más información</button>
         </div>
       </div>
     </section>
