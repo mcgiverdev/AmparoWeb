@@ -35,18 +35,24 @@
                   linear-gradient(135deg, #0a0a0a 0%, #1a0e14 50%, #0a0a0a 100%);
     }
     
-    .brand-logo {
-      width: 120px;
-      height: 120px;
-      background: linear-gradient(135deg, #3F0C1E, #BB9476);
-      border-radius: 30px;
+    .brand-logo-container {
+      width: 320px;
+      height: 140px;
+      margin: 0 auto 40px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 48px;
-      color: #FFEBD8;
-      margin: 0 auto 40px;
+      background: rgba(255, 235, 216, 0.05);
+      border-radius: 24px;
+      padding: 20px 30px;
       box-shadow: 0 20px 60px rgba(63, 12, 30, 0.4);
+    }
+    
+    .brand-logo-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
     }
     
     .cover-title {
@@ -198,12 +204,55 @@
       color: #a3a3a3;
       font-size: 14px;
     }
+    
+    /* Logo Variants */
+    .logo-variant {
+      text-align: center;
+    }
+    
+    .logo-preview {
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 235, 216, 0.03);
+      border: 1px solid rgba(255, 235, 216, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      padding: 15px;
+    }
+    
+    .logo-sample {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .logo-info {
+      text-align: center;
+    }
+    
+    .logo-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #FFEBD8;
+      margin-bottom: 4px;
+    }
+    
+    .logo-usage {
+      font-size: 12px;
+      color: #a3a3a3;
+      line-height: 1.3;
+    }
   </style>
 </head>
 <body>
   <!-- PORTADA -->
   <div class="presentation-page cover-page">
-    <div class="brand-logo">A</div>
+    <div class="brand-logo-container">
+      <img src="./assets/images/logos/AM4.png" alt="Amparo Logo" class="brand-logo-image">
+    </div>
     <h1 class="cover-title">Design System</h1>
     <p class="cover-subtitle">Sistema de Componentes UI para Coaching Profesional</p>
     
@@ -248,36 +297,40 @@
         <span class="toc-page">4</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">03. Tipografía y Jerarquías</span>
+        <span class="toc-title">03. Identidad Visual</span>
         <span class="toc-page">5</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">04. Componentes Base</span>
+        <span class="toc-title">04. Tipografía y Jerarquías</span>
         <span class="toc-page">6</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">05. Botones y Acciones</span>
+        <span class="toc-title">05. Componentes Base</span>
         <span class="toc-page">7</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">06. Formularios y Entradas</span>
+        <span class="toc-title">06. Botones y Acciones</span>
         <span class="toc-page">8</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">07. Cards y Contenedores</span>
+        <span class="toc-title">07. Formularios y Entradas</span>
         <span class="toc-page">9</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">08. Componentes de Landing</span>
+        <span class="toc-title">08. Cards y Contenedores</span>
         <span class="toc-page">10</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">09. Navegación y Menús</span>
+        <span class="toc-title">09. Componentes de Landing</span>
         <span class="toc-page">11</span>
       </div>
       <div class="toc-item">
-        <span class="toc-title">10. Implementación Técnica</span>
+        <span class="toc-title">10. Navegación y Menús</span>
         <span class="toc-page">12</span>
+      </div>
+      <div class="toc-item">
+        <span class="toc-title">11. Implementación Técnica</span>
+        <span class="toc-page">13</span>
       </div>
     </div>
   </div>
@@ -366,9 +419,86 @@
     </div>
   </div>
 
+  <!-- IDENTIDAD VISUAL -->
+  <div class="presentation-page page-break">
+    <h2 class="page-title">03. Identidad Visual</h2>
+    <div class="section-intro">
+      Variantes del logotipo y aplicaciones correctas para diferentes contextos y necesidades
+    </div>
+    
+    <div class="component-showcase">
+      <h3 class="component-title">Variantes del Logo</h3>
+      <div class="component-description">Cinco versiones optimizadas para diferentes usos y fondos</div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 30px; margin: 40px 0;">
+        <div class="logo-variant">
+          <div class="logo-preview">
+            <img src="./assets/images/logos/AM1.png" alt="Amparo Logo Variante 1" class="logo-sample">
+          </div>
+          <div class="logo-info">
+            <div class="logo-name">AM1 - Principal</div>
+            <div class="logo-usage">Headers, tarjetas de presentación</div>
+          </div>
+        </div>
+        
+        <div class="logo-variant">
+          <div class="logo-preview">
+            <img src="./assets/images/logos/AM2.png" alt="Amparo Logo Variante 2" class="logo-sample">
+          </div>
+          <div class="logo-info">
+            <div class="logo-name">AM2 - Alternativa</div>
+            <div class="logo-usage">Documentos, emails</div>
+          </div>
+        </div>
+        
+        <div class="logo-variant">
+          <div class="logo-preview">
+            <img src="./assets/images/logos/AM3.png" alt="Amparo Logo Variante 3" class="logo-sample">
+          </div>
+          <div class="logo-info">
+            <div class="logo-name">AM3 - Compacta</div>
+            <div class="logo-usage">Redes sociales, favicon</div>
+          </div>
+        </div>
+        
+        <div class="logo-variant">
+          <div class="logo-preview">
+            <img src="./assets/images/logos/AM4.png" alt="Amparo Logo Variante 4" class="logo-sample">
+          </div>
+          <div class="logo-info">
+            <div class="logo-name">AM4 - Horizontal</div>
+            <div class="logo-usage">Footer, presentaciones</div>
+          </div>
+        </div>
+        
+        <div class="logo-variant">
+          <div class="logo-preview">
+            <img src="./assets/images/logos/AM5.png" alt="Amparo Logo Variante 5" class="logo-sample">
+          </div>
+          <div class="logo-info">
+            <div class="logo-name">AM5 - Especial</div>
+            <div class="logo-usage">Eventos, material premium</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="component-showcase">
+      <h3 class="component-title">Implementación en Componentes</h3>
+      <div class="usage-example">
+        <!-- Header principal --><br>
+        &lt;img src="./assets/images/logos/AM1.png" alt="Amparo" class="h-12 w-auto"&gt;<br><br>
+        <!-- Footer --><br>
+        &lt;img src="./assets/images/logos/AM4.png" alt="Amparo" class="h-8 w-auto"&gt;<br><br>
+        <!-- Favicon/Social --><br>
+        &lt;img src="./assets/images/logos/AM3.png" alt="Amparo" class="h-10 w-10"&gt;
+      </div>
+    </div>
+  </div>
+
   <!-- TIPOGRAFÍA -->
   <div class="presentation-page page-break">
-    <h2 class="page-title">03. Tipografía</h2>
+    <h2 class="page-title">04. Tipografía</h2>
     <div class="section-intro">
       Combinación de fuentes que transmite elegancia en títulos y máxima legibilidad en contenido
     </div>
@@ -403,7 +533,7 @@
 
   <!-- Continúo con más páginas... -->
   <div class="presentation-page page-break">
-    <h2 class="page-title">04. Botones</h2>
+    <h2 class="page-title">06. Botones</h2>
     <div class="section-intro">
       Sistema de botones con jerarquía clara y estados interactivos que guían al usuario hacia la acción
     </div>
@@ -433,7 +563,7 @@
 
   <!-- IMPLEMENTACIÓN TÉCNICA -->
   <div class="presentation-page page-break">
-    <h2 class="page-title">10. Implementación</h2>
+    <h2 class="page-title">11. Implementación</h2>
     <div class="section-intro">
       Guía técnica para desarrolladores y pasos de migración a frameworks
     </div>

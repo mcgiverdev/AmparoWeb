@@ -11,7 +11,10 @@
   <header class="sticky top-0 z-50 backdrop-blur-lg bg-black/20 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
-        <h1 class="text-2xl font-medium">Amparo UI Kit</h1>
+        <div class="flex items-center gap-4">
+          <img src="./assets/images/logos/AM4.png" alt="Amparo" class="h-10 w-auto">
+          <h1 class="text-2xl font-medium">UI Kit</h1>
+        </div>
         <nav class="hidden md:flex gap-6 text-sm">
           <a href="#tokens" class="hover:text-cream transition-colors">Tokens</a>
           <a href="#buttons" class="hover:text-cream transition-colors">Botones</a>
@@ -36,6 +39,65 @@
     <!-- Design Tokens -->
     <section id="tokens" class="mb-20">
       <h3 class="text-3xl font-medium mb-8">Design Tokens</h3>
+      
+      <!-- Logo Variants -->
+      <div class="mb-12">
+        <h4 class="text-xl font-medium mb-6">Variantes del Logo</h4>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="card p-4 text-center">
+            <div class="h-20 flex items-center justify-center mb-3 bg-surface/30 rounded-lg">
+              <img src="./assets/images/logos/AM1.png" alt="Logo AM1" class="max-h-16 w-auto">
+            </div>
+            <div class="text-sm font-medium">AM1 - Principal</div>
+            <div class="text-xs text-muted">Headers, presentación</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="h-20 flex items-center justify-center mb-3 bg-surface/30 rounded-lg">
+              <img src="./assets/images/logos/AM2.png" alt="Logo AM2" class="max-h-16 w-auto">
+            </div>
+            <div class="text-sm font-medium">AM2 - Alternativa</div>
+            <div class="text-xs text-muted">Documentos, emails</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="h-20 flex items-center justify-center mb-3 bg-surface/30 rounded-lg">
+              <img src="./assets/images/logos/AM3.png" alt="Logo AM3" class="max-h-16 w-auto">
+            </div>
+            <div class="text-sm font-medium">AM3 - Compacta</div>
+            <div class="text-xs text-muted">Redes, favicon</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="h-20 flex items-center justify-center mb-3 bg-surface/30 rounded-lg">
+              <img src="./assets/images/logos/AM4.png" alt="Logo AM4" class="max-h-16 w-auto">
+            </div>
+            <div class="text-sm font-medium">AM4 - Horizontal</div>
+            <div class="text-xs text-muted">Footer, firmas</div>
+          </div>
+          <div class="card p-4 text-center">
+            <div class="h-20 flex items-center justify-center mb-3 bg-surface/30 rounded-lg">
+              <img src="./assets/images/logos/AM5.png" alt="Logo AM5" class="max-h-16 w-auto">
+            </div>
+            <div class="text-sm font-medium">AM5 - Especial</div>
+            <div class="text-xs text-muted">Eventos, premium</div>
+          </div>
+        </div>
+        <div class="mt-6 card p-4">
+          <h5 class="text-sm font-medium mb-3">Ejemplos de Implementación:</h5>
+          <div class="space-y-3">
+            <div>
+              <div class="text-xs font-medium mb-1">Header/Navigation:</div>
+              <code class="text-xs bg-surface px-2 py-1 rounded block">&lt;img src="./assets/images/logos/AM4.png" alt="Amparo" class="h-8 w-auto"&gt;</code>
+            </div>
+            <div>
+              <div class="text-xs font-medium mb-1">Hero Section:</div>
+              <code class="text-xs bg-surface px-2 py-1 rounded block">&lt;img src="./assets/images/logos/AM1.png" alt="Amparo" class="h-20 w-auto"&gt;</code>
+            </div>
+            <div>
+              <div class="text-xs font-medium mb-1">Footer:</div>
+              <code class="text-xs bg-surface px-2 py-1 rounded block">&lt;img src="./assets/images/logos/AM4.png" alt="Amparo" class="h-6 w-auto opacity-60"&gt;</code>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <!-- Paleta de colores -->
       <div class="mb-12">
@@ -211,6 +273,9 @@
         <!-- Hero Principal -->
         <div class="hero-main mb-8">
           <div class="hero-content">
+            <div class="flex justify-center mb-8">
+              <img src="./assets/images/logos/AM1.png" alt="Amparo Coaching" class="h-20 w-auto opacity-90">
+            </div>
             <div class="hero-badge">✨ Coaching Profesional</div>
             <h1 class="hero-title">Transforma tu vida con coaching personalizado</h1>
             <p class="hero-description">
@@ -223,8 +288,10 @@
           </div>
           <div class="hero-visual">
             <div class="hero-image">
-              <div class="text-6xl">🌟</div>
-              <div class="text-sm text-muted mt-2">Imagen/Video aquí</div>
+              <div class="flex flex-col items-center justify-center h-full">
+                <img src="./assets/images/logos/AM2.png" alt="Amparo Brand" class="h-32 w-auto mb-4 opacity-60">
+                <div class="text-sm text-muted">Logo alternativo para visuales</div>
+              </div>
             </div>
           </div>
         </div>
@@ -237,6 +304,77 @@
               Únete a cientos de personas que han transformado su vida profesional y personal.
             </p>
             <button class="btn-primary btn-lg">Comenzar ahora</button>
+          </div>
+        </div>
+
+        <!-- Hero con Logo Centrado -->
+        <div class="hero-main mb-8" style="background: linear-gradient(135deg, rgba(63, 12, 30, 0.03), rgba(187, 148, 118, 0.02));">
+          <div class="hero-content text-center">
+            <div class="mb-8">
+              <img src="./assets/images/logos/AM1.png" alt="Amparo Coaching" class="h-24 w-auto mx-auto mb-6 opacity-90">
+              <div class="hero-badge">✨ Coaching Profesional Certificado</div>
+            </div>
+            <h1 class="hero-title">Desbloquea tu máximo potencial</h1>
+            <p class="hero-description max-w-3xl mx-auto">
+              Con más de 10 años de experiencia, te acompaño en un proceso de transformación personal y profesional diseñado específicamente para tus necesidades y objetivos.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary btn-lg">Agendar Consulta Gratuita</button>
+              <button class="btn-outline btn-lg">Ver Testimonios</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Landing Sin Logo -->
+        <div class="hero-main mb-8">
+          <div class="hero-content">
+            <div class="hero-badge">🚀 Transformación Garantizada</div>
+            <h1 class="hero-title">Alcanza tus metas con coaching profesional</h1>
+            <p class="hero-description">
+              Más de 500 profesionales han transformado su carrera y vida personal. Sesiones personalizadas que se adaptan a tus objetivos específicos y ritmo de vida.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary btn-lg">Empezar Mi Transformación</button>
+              <button class="btn-outline btn-lg">Ver Casos de Éxito</button>
+            </div>
+            <div class="flex items-center justify-center gap-6 mt-8 text-sm text-muted">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span>100+ Clientes activos</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span>97% Satisfacción</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span>10+ Años experiencia</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image">
+              <div class="flex flex-col items-center justify-center h-full text-center">
+                <div class="text-4xl mb-4">🎯</div>
+                <div class="text-lg font-medium mb-2">Enfoque Personalizado</div>
+                <div class="text-sm text-muted">Cada sesión diseñada<br>para tus objetivos únicos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Minimalista -->
+        <div class="hero-compact mb-8" style="background: linear-gradient(135deg, rgba(255, 235, 216, 0.02), rgba(236, 229, 215, 0.01)); border: 1px solid rgba(255, 235, 216, 0.1);">
+          <div class="text-center py-12">
+            <div class="hero-badge mb-6">💪 Resultados Reales</div>
+            <h2 class="text-4xl font-medium mb-6">Tu mejor versión te está esperando</h2>
+            <p class="text-xl text-muted mb-8 max-w-3xl mx-auto">
+              Descubre el poder del coaching personalizado. Sesiones diseñadas para crear cambios duraderos en tu vida profesional y personal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button class="btn-primary btn-lg">Reservar Primera Sesión</button>
+              <button class="btn-outline btn-lg">Conocer Metodología</button>
+            </div>
           </div>
         </div>
       </div>
@@ -420,8 +558,7 @@
         <div class="nav-header">
           <div class="nav-container">
             <div class="nav-brand">
-              <div class="nav-logo">A</div>
-              <span class="nav-title">Amparo</span>
+              <img src="./assets/images/logos/AM4.png" alt="Amparo" class="h-8 w-auto">
             </div>
             <nav class="nav-menu">
               <a href="#" class="nav-link nav-active">Inicio</a>
