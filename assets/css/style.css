@@ -1,23 +1,17 @@
 /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
 @layer properties;
-@font-face {
-  font-family: "Cocomat Pro";
-  src: url("./fonts/CocomatPro-Regular.woff2") format("woff2"), url("./fonts/CocomatPro-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: "Cocomat Pro", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-white: #FFFFFF;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --container-2xl: 42rem;
     --container-6xl: 72rem;
@@ -37,18 +31,10 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-brand: #3F0C1E;
-    --color-cream: #FFEBD8;
-    --color-tan: #BB9476;
-    --color-bg: #1c0c12;
-    --color-text: var(--color-cream);
-    --color-primary: var(--color-brand);
-    --color-secondary: var(--color-tan);
   }
 }
 @layer base {
@@ -239,9 +225,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -253,12 +236,6 @@
   }
   .max-w-6xl {
     max-width: var(--container-6xl);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .list-inside {
     list-style-position: inside;
@@ -334,10 +311,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -353,10 +326,6 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -382,36 +351,13 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .decoration-\[var\(--accent\)\]\/40 {
-    text-decoration-color: var(--accent);
-    @supports (color: color-mix(in lab, red, red)) {
-      text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent);
-    }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .hover\:bg-white\/5 {
     &:hover {
       @media (hover: hover) {
-        background-color: color-mix(in srgb, #FFFFFF 5%, transparent);
+        background-color: color-mix(in srgb, #fff 5%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
         }
-      }
-    }
-  }
-  .hover\:decoration-\[var\(--accent\)\] {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-color: var(--accent);
       }
     }
   }
@@ -453,31 +399,118 @@
     }
   }
 }
+@font-face {
+  font-family: 'Cocomat';
+  src: url('../assets/fonts/cocomat/Cocomat Light-trial.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cocomat';
+  src: url('../assets/fonts/cocomat/Cocomat Ultralight-trial.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   color-scheme: dark;
+  --brand: #3F0C1E;
+  --cream: #FFEBD8;
+  --tan: #BB9476;
+  --beige: #ECE5D7;
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --bg: var(--black);
+  --surface: #141414;
+  --text: #f5f5f5;
+  --muted: #a3a3a3;
+  --primary: var(--brand);
+  --secondary: var(--tan);
+  --accent: var(--cream);
+}
+html, body {
+  height: 100%;
 }
 body {
   min-height: 100vh;
   font-family: var(--font-sans);
-  background: radial-gradient(1200px 800px at 20% -10%, color-mix(in srgb, #3F0C1E 22%, transparent), transparent 60%),	radial-gradient(1000px 700px at 90% 10%, color-mix(in srgb, #BB9476 18%, transparent), transparent 50%),	var(--color-bg);
+  background: radial-gradient(1200px 800px at 20% -10%, var(--primary), transparent 60%),	radial-gradient(1000px 700px at 90% 10%, var(--secondary), transparent 50%),	var(--bg);
   @supports (color: color-mix(in lab, red, red)) {
-    background: radial-gradient(1200px 800px at 20% -10%, color-mix(in oklab, var(--color-primary) 22%, transparent), transparent 60%),	radial-gradient(1000px 700px at 90% 10%, color-mix(in oklab, var(--color-secondary) 18%, transparent), transparent 50%),	var(--color-bg);
+    background: radial-gradient(1200px 800px at 20% -10%, color-mix(in oklab, var(--primary) 22%, transparent), transparent 60%),	radial-gradient(1000px 700px at 90% 10%, color-mix(in oklab, var(--secondary) 18%, transparent), transparent 50%),	var(--bg);
   }
-  color: var(--color-text);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+h1, h2, h3, h4 {
+  font-family: 'Cocomat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+.card {
+  background: var(--surface);
+  @supports (color: color-mix(in lab, red, red)) {
+    background: color-mix(in oklab, var(--surface) 92%, transparent);
+  }
+  border: 1px solid var(--surface);
+  @supports (color: color-mix(in lab, red, red)) {
+    border: 1px solid color-mix(in oklab, var(--surface) 70%, #fff 8%);
+  }
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.chip {
+  border-radius: 999px;
+  border: 1px solid var(--surface);
+  @supports (color: color-mix(in lab, red, red)) {
+    border: 1px solid color-mix(in oklab, var(--surface) 70%, #fff 10%);
+  }
 }
 .btn-brand {
-  background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, #3F0C1E 70%, #000));
-  @supports (color: color-mix(in lab, red, red)) {
-    background: linear-gradient(135deg, var(--color-primary), color-mix(in oklab, var(--color-primary) 70%, #000));
-  }
-  color: #fff;
+  background: var(--primary);
+  color: var(--cream);
+}
+.btn-brand:hover {
+  filter: brightness(1.08);
 }
 .btn-cream {
-  background: linear-gradient(135deg, var(--color-secondary), color-mix(in srgb, #BB9476 70%, #000));
+  background: var(--cream);
+  color: var(--brand);
+}
+.btn-cream:hover {
+  filter: brightness(0.98);
+}
+.swatch {
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px;
+}
+.link-accent {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
   @supports (color: color-mix(in lab, red, red)) {
-    background: linear-gradient(135deg, var(--color-secondary), color-mix(in oklab, var(--color-secondary) 70%, #000));
+    text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent);
   }
-  color: #fff;
+}
+.link-accent:hover {
+  text-decoration-color: var(--accent);
+}
+.bg-brand {
+  background: var(--brand);
+}
+.bg-cream {
+  background: var(--cream);
+}
+.bg-tan {
+  background: var(--tan);
+}
+.bg-beige {
+  background: var(--beige);
+}
+.bg-blackd {
+  background: var(--black);
+}
+.bg-whited {
+  background: var(--white);
 }
 @property --tw-border-style {
   syntax: "*";
@@ -492,84 +525,12 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
     }
   }
 }
