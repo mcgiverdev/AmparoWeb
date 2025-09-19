@@ -148,14 +148,6 @@
         
       </div>
     </div>
-    
-    <!-- Indicador de scroll simple -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-      <div class="w-6 h-10 border-2 border-amber-400/50 rounded-full mx-auto mb-2 flex justify-center">
-        <div class="w-1 h-3 bg-amber-400 rounded-full mt-2"></div>
-      </div>
-      <div class="text-amber-400/70 text-xs">Scroll</div>
-    </div>
   </section>
 
   <!-- Sección 2 - Conexión Directa (¿Te ha pasado esto?) -->
@@ -824,19 +816,19 @@
           <p class="text-gray-300">Recibirás un correo con el acceso a la comunidad privada y los primeros pasos para iniciar tu camino.</p>
         </div>
 
-        <!-- FAQ Item 2 -->
+        <!-- FAQ Item 5 -->
         <div class="bg-gradient-to-b from-gray-900/60 to-black/80 border border-gray-700/50 rounded-xl p-6">
           <h3 class="text-lg font-semibold text-amber-300 mb-3">¿Qué pasa si falto a una sesión?</h3>
           <p class="text-gray-300">Reprogramamos 1 sesión al mes sin coste adicional. El seguimiento diario por WhatsApp continúa para mantener tu progreso.</p>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 6 -->
         <div class="bg-gradient-to-b from-gray-900/60 to-black/80 border border-gray-700/50 rounded-xl p-6">
           <h3 class="text-lg font-semibold text-amber-300 mb-3">¿Funciona si ya he hecho terapia tradicional?</h3>
           <p class="text-gray-300">Sí, es complementario. El Método Indomismo se enfoca en regulación del sistema nervioso y acción práctica, no solo en comprensión intelectual.</p>
         </div>
 
-        <!-- FAQ Item 4 -->
+        <!-- FAQ Item 7 -->
         <div class="bg-gradient-to-b from-gray-900/60 to-black/80 border border-gray-700/50 rounded-xl p-6">
           <h3 class="text-lg font-semibold text-amber-300 mb-3">¿Qué herramientas específicas utilizamos?</h3>
           <p class="text-gray-300">Regulación del sistema nervioso, respiración consciente, reprogramación de patrones, visualización guiada y protocolos de acción práctica.</p>
@@ -1082,13 +1074,28 @@
   </footer>
 
   <!-- Botón de scroll to top -->
-  <button id="scrollTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 rounded-full flex items-center justify-center shadow-lg shadow-amber-500/30 opacity-0 invisible transition-all duration-300 z-40">
+  <button id="scrollTop" class="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 rounded-full flex items-center justify-center shadow-xl shadow-amber-500/40 opacity-0 invisible transition-all duration-300 z-50 hover:scale-110">
     <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
     </svg>
   </button>
 
   <!-- JavaScript para interactividad -->
+  <style>
+    .pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .8;
+      }
+    }
+  </style>
+
   <script>
     // Smooth scrolling para navegación
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1133,10 +1140,11 @@
       top: 0;
       left: 0;
       width: 0%;
-      height: 3px;
+      height: 2px;
       background: linear-gradient(to right, #f59e0b, #d97706);
       z-index: 9999;
-      transition: width 0.3s ease;
+      transition: width 0.2s ease;
+      opacity: 0.8;
     `;
     document.body.appendChild(progressBar);
 
@@ -1145,6 +1153,36 @@
       const scrollPercent = (window.pageYOffset / docHeight) * 100;
       progressBar.style.width = scrollPercent + '%';
     });
+
+    // Animaciones de aparición para las secciones
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observar todas las secciones
+    document.querySelectorAll('section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(30px)';
+      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(section);
+    });
+
+    // Hacer visible la primera sección inmediatamente
+    const firstSection = document.querySelector('section');
+    if (firstSection) {
+      firstSection.style.opacity = '1';
+      firstSection.style.transform = 'translateY(0)';
+    }
   </script>
 
   <!-- Estilos adicionales para animaciones -->
