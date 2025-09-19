@@ -8,25 +8,29 @@
   <link rel="stylesheet" href="./src/output.css" />
 </head>
 <body class="min-h-screen">
-  <!-- Header Minimalista -->
-  <header class="sticky top-0 z-50 backdrop-blur-lg bg-black/30 border-b border-white/5 py-4">
-    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+  <!-- Header Optimizado para Conversión -->
+  <header class="sticky top-0 z-50 backdrop-blur-lg bg-black/90 border-b border-amber-400/20 py-4">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
       <div class="flex items-center">
-        <div class="text-lg font-medium text-cream">Indomismo Humano</div>
+        <div class="text-xl font-bold text-amber-300">Indomismo Humano</div>
       </div>
+      
       <div class="flex items-center gap-4">
         <div class="hidden md:flex items-center gap-4 text-sm">
-          <div class="text-cream">127 mujeres transformadas</div>
-          <div class="text-tan">• Solo 8 semanas</div>
+          <div class="text-amber-300 font-semibold">✨ Cupos limitados</div>
+          <div class="text-gray-400">•</div>
+          <div class="text-gray-300">Respuesta en 24h</div>
         </div>
-        <button class="btn-primary btn-sm">Aplicar a Indomismo 8 Semanas</button>
+        <button class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-sm px-8 py-3 rounded-full shadow-lg hover:shadow-amber-500/30 transition-all duration-300 transform hover:scale-105">
+          Aplicar Ahora
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Hero Section - Above the Fold -->
-  <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
-    <!-- Background Elements -->
+  <section id="inicio" class="min-h-screen flex items-center py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+    <!-- Background Elements sutiles -->
     <div class="absolute inset-0 opacity-5">
       <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-amber-400 rounded-full blur-3xl"></div>
       <div class="absolute bottom-1/3 right-1/4 w-24 h-24 bg-amber-600 rounded-full blur-2xl"></div>
@@ -119,10 +123,23 @@
         
       </div>
     </div>
+    
+    <!-- Indicador de scroll simple -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
+      <div class="w-6 h-10 border-2 border-amber-400/50 rounded-full mx-auto mb-2 flex justify-center">
+        <div class="w-1 h-3 bg-amber-400 rounded-full mt-2"></div>
+      </div>
+      <div class="text-amber-400/70 text-xs">Scroll</div>
+    </div>
   </section>
 
   <!-- Sección 2 - Conexión Directa (¿Te ha pasado esto?) -->
-  <section class="py-16 px-4 bg-gradient-to-b from-black to-gray-900">
+  <section id="problema" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">2</span>
+      </div>
+    </div>
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white">¿Te ha pasado esto?</h2>
       
@@ -156,7 +173,12 @@
   </section>
 
   <!-- Sección 3 - Beneficios Transformacionales -->
-  <section class="py-16 px-4 bg-gradient-to-b from-gray-900 via-black to-gray-900 border-y border-gray-800/30">
+  <section id="beneficios" class="py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">3</span>
+      </div>
+    </div>
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Lo que vas a despertar en este camino</h2>
       <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -351,7 +373,12 @@
   </section>
 
   <!-- Social Proof -->
-  <section class="py-20 px-4 bg-gradient-to-b from-gray-900/70 via-black to-gray-900/70 border-y border-amber-500/10">
+  <section id="testimonios" class="py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">5</span>
+      </div>
+    </div>
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <div class="inline-flex items-center gap-2 bg-brand-cream/10 px-6 py-3 rounded-full mb-6">
@@ -394,7 +421,12 @@
   </section>
 
   <!-- Sección 4 - ¿Qué incluye Indomismo Humano? -->
-  <section class="py-20 px-4 bg-gradient-to-b from-gray-900/50 via-black to-gray-900/50">
+  <section id="programa" class="py-20 px-4 bg-gradient-to-b from-gray-900 via-black to-gray-900">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">4</span>
+      </div>
+    </div>
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold mb-4 text-white">¿Qué incluye Indomismo Humano?</h2>
@@ -491,7 +523,12 @@
   </section>
 
   <!-- Sección 6 - Sobre Amparo Moles -->
-  <section class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+  <section id="amparo" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">6</span>
+      </div>
+    </div>
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold mb-4 text-white">Conoce a tu guía</h2>
@@ -556,7 +593,12 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-900/30 to-black border-t border-gray-800/30">
+  <section id="faq" class="py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">7</span>
+      </div>
+    </div>
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold mb-4 text-white">Preguntas frecuentes</h2>
@@ -634,7 +676,12 @@
   </section>
 
   <!-- Sección 8 - Cierre y CTA Final -->
-  <section class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+  <section id="cta-final" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-lg shadow-amber-500/30 mb-4">
+        <span class="text-black font-bold text-2xl">8</span>
+      </div>
+    </div>
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">El momento de tu transformación es ahora</h2>
       
@@ -670,13 +717,199 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-white/10 py-8 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="text-muted text-sm">
-        © 2025 Amparo Moles • Método Indomismo • Todos los derechos reservados.
+  <!-- Footer Profesional -->
+  <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-amber-400/20 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <!-- Separador visual final -->
+      <div class="flex items-center justify-center mb-12">
+        <div class="flex items-center gap-4">
+          <div class="w-24 h-px bg-gradient-to-r from-transparent to-amber-400"></div>
+          <div class="w-3 h-3 bg-amber-400 rounded-full"></div>
+          <div class="text-amber-300 text-lg font-semibold">Indomismo Humano</div>
+          <div class="w-3 h-3 bg-amber-400 rounded-full"></div>
+          <div class="w-24 h-px bg-gradient-to-l from-transparent to-amber-400"></div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        
+        <!-- Información de contacto -->
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-bold text-amber-300 mb-4">Contacto</h3>
+          <div class="space-y-3 text-gray-300">
+            <div class="flex items-center justify-center md:justify-start gap-3">
+              <span class="text-amber-400">📧</span>
+              <span>amparo@indomismohumano.com</span>
+            </div>
+            <div class="flex items-center justify-center md:justify-start gap-3">
+              <span class="text-amber-400">📱</span>
+              <span>WhatsApp disponible</span>
+            </div>
+            <div class="flex items-center justify-center md:justify-start gap-3">
+              <span class="text-amber-400">🌎</span>
+              <span>Sesiones Online • Global</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="text-center">
+          <h3 class="text-xl font-bold text-amber-300 mb-4">Navegación</h3>
+          <div class="space-y-2 text-gray-300">
+            <a href="#inicio" class="block hover:text-amber-300 transition-colors">Inicio</a>
+            <a href="#programa" class="block hover:text-amber-300 transition-colors">Programa</a>
+            <a href="#testimonios" class="block hover:text-amber-300 transition-colors">Testimonios</a>
+            <a href="#amparo" class="block hover:text-amber-300 transition-colors">Sobre Amparo</a>
+            <a href="#faq" class="block hover:text-amber-300 transition-colors">FAQ</a>
+          </div>
+        </div>
+
+        <!-- Redes sociales y garantías -->
+        <div class="text-center md:text-right">
+          <h3 class="text-xl font-bold text-amber-300 mb-4">Conecta Conmigo</h3>
+          <div class="flex justify-center md:justify-end gap-4 mb-6">
+            <div class="w-10 h-10 bg-amber-400/20 rounded-full flex items-center justify-center cursor-pointer hover:bg-amber-400/30 transition-colors">
+              <span class="text-amber-300 text-sm font-bold">IG</span>
+            </div>
+            <div class="w-10 h-10 bg-amber-400/20 rounded-full flex items-center justify-center cursor-pointer hover:bg-amber-400/30 transition-colors">
+              <span class="text-amber-300 text-sm font-bold">FB</span>
+            </div>
+            <div class="w-10 h-10 bg-amber-400/20 rounded-full flex items-center justify-center cursor-pointer hover:bg-amber-400/30 transition-colors">
+              <span class="text-amber-300 text-sm font-bold">YT</span>
+            </div>
+          </div>
+          
+          <!-- Garantías de seguridad -->
+          <div class="space-y-2 text-sm text-gray-400">
+            <div class="flex items-center justify-center md:justify-end gap-2">
+              <span class="text-green-400">🔒</span>
+              <span>Pago 100% Seguro</span>
+            </div>
+            <div class="flex items-center justify-center md:justify-end gap-2">
+              <span class="text-green-400">✅</span>
+              <span>Garantía 14 días</span>
+            </div>
+            <div class="flex items-center justify-center md:justify-end gap-2">
+              <span class="text-green-400">🛡️</span>
+              <span>Privacidad Protegida</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Línea divisoria -->
+      <div class="border-t border-gray-700/50 pt-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+          <div>
+            © 2025 Indomismo Humano - Amparo Moles. Todos los derechos reservados.
+          </div>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-amber-300 transition-colors">Términos y Condiciones</a>
+            <a href="#" class="hover:text-amber-300 transition-colors">Política de Privacidad</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- Botón de scroll to top -->
+  <button id="scrollTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 rounded-full flex items-center justify-center shadow-lg shadow-amber-500/30 opacity-0 invisible transition-all duration-300 z-40">
+    <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
+      <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+    </svg>
+  </button>
+
+  <!-- JavaScript para interactividad -->
+  <script>
+    // Smooth scrolling para navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Botón scroll to top
+    const scrollTopBtn = document.getElementById('scrollTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.remove('opacity-0', 'invisible');
+        scrollTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        scrollTopBtn.classList.add('opacity-0', 'invisible');
+        scrollTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+    
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Scroll suave simple sin efectos complejos
+
+    // Contador de progreso de lectura
+    const progressBar = document.createElement('div');
+    progressBar.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(to right, #f59e0b, #d97706);
+      z-index: 9999;
+      transition: width 0.3s ease;
+    `;
+    document.body.appendChild(progressBar);
+
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (window.pageYOffset / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+  </script>
+
+  <!-- Estilos adicionales para animaciones -->
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    /* Mejora del scroll suave */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Efecto hover mejorado para botones */
+    button:hover {
+      transform: translateY(-2px);
+    }
+    
+    /* Transiciones suaves para enlaces */
+    a {
+      transition: all 0.3s ease;
+    }
+  </style>
 </body>
 </html>
