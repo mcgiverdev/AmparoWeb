@@ -125,19 +125,42 @@
 
 ## 5. AUTORIDAD Y CREDIBILIDAD
 
-### Perfil de Amparo Moles
-- **Título principal:** Mujer indómita, autora, conferencista
+### Perfil Completo de Amparo Moles
+- **Identidad principal:** Escritora, empresaria, mujer resiliente
+- **Misión:** Brindar herramientas prácticas y espirituales para transformar historia, activar poder interior y vivir con propósito
 - **Empresa:** Fundadora de Uwealth Group
-- **Experiencia personal:** Superación de trauma, miedo y transformación
-- **Filosofía:** "Tu pasado no te define. Lo que haces con él, sí."
-- **Enfoque:** Acompañamiento desde la vivencia personal
-- **Especialización:** Transformación femenina acelerada
+- **Alcance:** Voz influyente en emprendimiento, sanación emocional y expansión de conciencia en comunidad latina de Estados Unidos
+
+### Historia Personal Transformacional
+- **Trauma fundacional:** Caída desde quinto piso
+- **Experiencias superadas:** Depresiones profundas, heridas familiares, emigración con hijos, reconstrucción desde cero
+- **Decisión clave:** Convertir el dolor en propósito
+- **Enfoque:** Acompañamiento desde la experiencia vivida, no desde el pedestal
+
+### Influencias y Mentores
+- **Tony Robbins:** Desarrollo personal y liderazgo
+- **John C. Maxwell:** Liderazgo y crecimiento
+- **Conexión espiritual:** Relación personal con Dios
+- **Síntesis:** Integración de múltiples filosofías en método propio
+
+### Filosofías Centrales
+- **Frase emblemática:** "No estás rota. Estás repitiendo. Pero puedes elegir reescribirte."
+- **Filosofía base:** "Tu pasado no te define. Lo que haces con él, sí."
+- **Enfoque disruptivo:** Mentoría desde la experiencia real
+- **Convicción:** Las personas no están rotas, solo repitiendo patrones
+
+### Impacto y Especialización
+- **Alcance:** Miles de personas impactadas
+- **Especialización primaria:** Mujeres que rompen autosabotaje y despiertan identidad real
+- **Medios:** Libros, programas, conferencias
+- **Resultado:** Conversión en líderes de vida y negocio
 
 ### Metodología Exclusiva
-- **Método Indomismo:** Técnica propietaria
+- **Método Indomismo Humano:** Filosofía de vida que une neurociencia, espiritualidad y acción concreta
 - **Enfoque multidimensional:** Espíritu + Mente + Cuerpo + Finanzas
-- **Base científica:** Regulación del sistema nervioso
-- **Diferenciación:** Resultados en semanas, no años
+- **Base científica:** Regulación del sistema nervioso + neurociencia aplicada
+- **Diferenciación:** Rompe patrones repetitivos para liderar desde el alma
+- **Resultados:** Transformación en semanas, no años
 
 ---
 
