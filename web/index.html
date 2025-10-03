@@ -1,928 +1,1435 @@
-<!doctype html>
-<html lang="es" class="light">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amparo Moles - Escritora, CEO y Mentora Internacional. Transformación personal auténtica con el Método Indomismo Humano. 1000+ vidas impactadas."
+    />
+    <title>Amparo Moles | Transformación Personal Auténtica</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amparo Moles - Escritora, Empresaria y Mentora de Transformación Personal</title>
-  <meta name="description"
-    content="Sitio oficial de Amparo Moles. Escritora, empresaria y mentora especializada en transformación personal. Fundadora de Uwealth Group y creadora de programas de desarrollo personal.">
-  <link rel="stylesheet" href="../src/output.css" />
-</head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="min-h-screen bg-white text-gray-900">
-  <!-- Header Corporativo Limpio -->
-  <header class="bg-white/95 border-b border-gray-200 py-4 sticky top-0 z-50 backdrop-blur-lg">
-    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-      <div class="flex items-center">
-        <img src="../assets/images/logos/logo.png" alt="Amparo Moles"
-          class="h-12 w-auto max-w-[250px] object-contain">
-      </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Logo_amparo.png" />
 
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="#inicio" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Inicio</a>
-        <a href="#sobre-mi" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Sobre Mí</a>
-        <a href="#programas" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Programas</a>
-        <a href="#testimonios" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Testimonios</a>
-        <a href="#libros" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Libros</a>
-        <a href="#media" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Media</a>
-        <a href="#contacto" class="text-gray-700 hover:text-amber-600 font-medium transition-colors">Contacto</a>
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Estilos compilados -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header/Navegación -->
+    <header class="header">
+      <nav class="navbar container-custom">
+        <a href="#" class="navbar-brand">
+          <img
+            src="images/Logo_amparo_color_blancoV2_Fondos_Negro.png"
+            alt="Amparo Moles Logo"
+            class="navbar-logo"
+          />
+        </a>
+
+        <!-- Menú Desktop -->
+        <ul class="navbar-menu">
+          <li><a href="#inicio" class="navbar-link active">Inicio</a></li>
+          <li><a href="#sobre-mi" class="navbar-link">Sobre Mí</a></li>
+          <li><a href="#programas" class="navbar-link">Programas</a></li>
+          <li><a href="#testimonios" class="navbar-link">Testimonios</a></li>
+          <li><a href="#libros" class="navbar-link">Libros</a></li>
+          <li><a href="#contacto" class="navbar-link">Contacto</a></li>
+        </ul>
+
+        <!-- Toggle para Mobile -->
+        <button class="navbar-toggle" id="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
 
-      <div class="flex items-center gap-4">
-        <button
-          class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300">
-          Trabajar Conmigo
-        </button>
+      <!-- Menú Mobile -->
+      <div class="navbar-mobile" id="navbarMobile">
+        <ul class="navbar-mobile-menu">
+          <li><a href="#inicio" class="navbar-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="navbar-link">Sobre Mí</a></li>
+          <li><a href="#programas" class="navbar-link">Programas</a></li>
+          <li><a href="#testimonios" class="navbar-link">Testimonios</a></li>
+          <li><a href="#libros" class="navbar-link">Libros</a></li>
+          <li><a href="#contacto" class="navbar-link">Contacto</a></li>
+        </ul>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Section Corporativo -->
-  <section id="inicio" class="py-20 bg-gradient-to-br from-amber-50 to-white border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        
-        <!-- Content Professional -->
-        <div class="space-y-8">
-          <!-- Badge Profesional -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">
-            <span>✨</span>
-            Escritora • CEO • Mentora Internacional
-          </div>
-
-          <!-- Título Principal -->
-          <div class="space-y-4">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Amparo <span class="text-amber-600">Moles</span>
-            </h1>
-            <p class="text-2xl text-gray-600 font-light">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
+          <!-- Columna 1: Información -->
+          <div class="hero-content fade-in-up">
+            <div class="mb-6">
+              <span
+                class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(187, 148, 118, 0.2),
+                    rgba(187, 148, 118, 0.05)
+                  );
+                  color: #bb9476;
+                  border: 1px solid rgba(187, 148, 118, 0.3);
+                "
+              >
+                ✨ Escritora • CEO • Mentora Internacional
+              </span>
+            </div>
+            <h1 class="hero-title">Amparo Moles</h1>
+            <h2
+              class="text-2xl md:text-3xl font-semibold mb-6"
+              style="color: #ece5d7"
+            >
               Transformando vidas desde la experiencia auténtica
+            </h2>
+            <p class="hero-subtitle mb-8">
+              Soy escritora, empresaria y mentora especializada en
+              transformación personal. Como fundadora de
+              <strong>Uwealth Group</strong>, acompaño a mujeres que desean
+              liberar patrones invisibles y vivir desde su poder más auténtico.
             </p>
-          </div>
 
-          <!-- Descripción Principal -->
-          <p class="text-xl text-gray-700 leading-relaxed">
-            Soy escritora, empresaria y mentora especializada en transformación personal. 
-            Como fundadora de <strong>Uwealth Group</strong>, he dedicado mi carrera a acompañar 
-            a mujeres en procesos de crecimiento profundo y desarrollo personal.
-          </p>
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(187, 148, 118, 0.1),
+                    rgba(187, 148, 118, 0.05)
+                  );
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="text-3xl mb-2">📚</div>
+                <div class="font-semibold" style="color: #ffebd8">Autora</div>
+                <div class="text-sm" style="color: #a0a0a0">Serie "Amparo"</div>
+              </div>
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(187, 148, 118, 0.1),
+                    rgba(187, 148, 118, 0.05)
+                  );
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="text-3xl mb-2">💼</div>
+                <div class="font-semibold" style="color: #ffebd8">CEO</div>
+                <div class="text-sm" style="color: #a0a0a0">Uwealth Group</div>
+              </div>
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(187, 148, 118, 0.1),
+                    rgba(187, 148, 118, 0.05)
+                  );
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="text-3xl mb-2">🌟</div>
+                <div class="font-semibold" style="color: #ffebd8">Mentora</div>
+                <div class="text-sm" style="color: #a0a0a0">
+                  1000+ vidas impactadas
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(187, 148, 118, 0.1),
+                    rgba(187, 148, 118, 0.05)
+                  );
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="text-3xl mb-2">🎤</div>
+                <div class="font-semibold" style="color: #ffebd8">Speaker</div>
+                <div class="text-sm" style="color: #a0a0a0">
+                  Voz Influyente USA
+                </div>
+              </div>
+            </div>
 
-          <!-- Credenciales Principales -->
-          <div class="grid grid-cols-2 gap-6">
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span class="text-amber-600 text-xl">📚</span>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Autora</div>
-                <div class="text-sm text-gray-600">Serie "Amparo"</div>
-              </div>
+            <div class="hero-actions">
+              <button class="btn-primary btn-lg">
+                <i class="fas fa-fire"></i>
+                Ver Mis Programas
+              </button>
             </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span class="text-amber-600 text-xl">🏢</span>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">CEO</div>
-                <div class="text-sm text-gray-600">Uwealth Group</div>
-              </div>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span class="text-amber-600 text-xl">🌟</span>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Mentora</div>
-                <div class="text-sm text-gray-600">1000+ vidas impactadas</div>
-              </div>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span class="text-amber-600 text-xl">🎤</span>
-              </div>
-              <div>
-                <div class="font-semibold text-gray-900">Speaker</div>
-                <div class="text-sm text-gray-600">Voz Influyente USA</div>
-              </div>
-            </div>
-          </div>
 
-          <!-- CTAs -->
-          <div class="flex flex-wrap gap-4 pt-4">
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-lg transition-all">
-              Ver Mis Programas
-            </button>
-            <button class="border-2 border-gray-300 hover:border-amber-600 text-gray-700 hover:text-amber-600 font-semibold px-8 py-3 rounded-lg transition-all">
-              Descargar Bio
-            </button>
-          </div>
-        </div>
-
-        <!-- Image Professional -->
-        <div class="relative">
-          <div class="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl p-6 shadow-xl">
-            <!-- Contenedor limpio para la imagen -->
-            <div class="relative rounded-xl overflow-hidden bg-white">
-              <img
-                src="../assets/images/instructora-indomismo.png"
-                alt="Amparo Moles - Escritora y Mentora" 
-                class="w-full h-[500px] object-cover">
-            </div>
-            
-            <!-- Quote Card - Fuera de la imagen -->
-            <div class="mt-6 bg-white/95 backdrop-blur rounded-xl p-6 shadow-lg border border-white/20">
-              <blockquote class="text-gray-800 text-lg italic font-medium text-center">
+            <!-- Quote destacada -->
+            <div
+              class="mt-8 p-6 rounded-xl"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(187, 148, 118, 0.1),
+                  rgba(187, 148, 118, 0.05)
+                );
+                border-left: 4px solid #bb9476;
+              "
+            >
+              <p class="italic text-lg" style="color: #ece5d7">
                 "Tu pasado no te define. Lo que haces con él, sí."
-              </blockquote>
-              <div class="text-center mt-3 text-amber-600 font-semibold">- Amparo Moles</div>
+              </p>
+              <p class="text-sm mt-2" style="color: #bb9476">— Amparo Moles</p>
+            </div>
+          </div>
+
+          <!-- Columna 2: Video -->
+          <div class="fade-in-up">
+            <div
+              class="relative rounded-2xl overflow-hidden shadow-2xl"
+              style="
+                border: 2px solid rgba(187, 148, 118, 0.3);
+                aspect-ratio: 16/9;
+              "
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/e74BImATfJg?si=q8qFjftWupVZGrzy"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="display: block"
+              >
+              </iframe>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sección Sobre Mí -->
-  <section id="sobre-mi" class="py-20 bg-white border-b border-gray-100">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Mi Historia</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Mi camino hacia la mentoría nació de la transformación personal más profunda que una persona puede experimentar.
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="section">
+      <div class="container-custom">
+        <h2 class="section-title">
+          Mi <span class="text-gradient-accent">Historia</span>
+        </h2>
+        <p class="section-subtitle">
+          Mi camino hacia la mentoría nació de la transformación personal más
+          profunda que una persona puede vivir. Convierto el dolor en propósito
+          para acompañar a otras mujeres en su despertar.
         </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <!-- Del dolor al propósito -->
+          <div class="scroll-reveal">
+            <div
+              class="p-8 rounded-2xl h-full"
+              style="
+                background: linear-gradient(135deg, #3f0c1e, #2a0814);
+                border: 2px solid rgba(187, 148, 118, 0.3);
+              "
+            >
+              <div class="mb-6">
+                <div
+                  class="w-16 h-16 rounded-full flex items-center justify-center mb-4"
+                  style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+                >
+                  <i class="fas fa-heart text-2xl" style="color: #ffebd8"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4" style="color: #ffebd8">
+                  Del Dolor al Propósito
+                </h3>
+              </div>
+              <p class="mb-4" style="color: #c0c0c0; line-height: 1.8">
+                Mi historia está marcada por depresiones profundas, traumas que
+                parecían insuperables, la valentía de emigrar y la fuerza para
+                reconstruirme desde cero.
+              </p>
+              <p style="color: #c0c0c0; line-height: 1.8">
+                De esa experiencia nació mi
+                <strong style="color: #bb9476">método propio</strong>
+                que combina neurociencia, espiritualidad y acción concreta. No
+                te hablo desde la teoría, te hablo desde la vivencia real.
+              </p>
+            </div>
+          </div>
+
+          <!-- Filosofía y Misión -->
+          <div class="space-y-6 scroll-reveal">
+            <!-- Filosofía -->
+            <div
+              class="p-8 rounded-2xl"
+              style="
+                background-color: #1f1f1f;
+                border: 2px solid rgba(187, 148, 118, 0.2);
+              "
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div class="flex-shrink-0">
+                  <i
+                    class="fas fa-lightbulb text-3xl"
+                    style="color: #bb9476"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-3" style="color: #ffebd8">
+                    Mi Filosofía
+                  </h4>
+                  <p style="color: #c0c0c0; line-height: 1.8">
+                    <strong style="color: #bb9476">No estás rota:</strong>
+                    repites patrones que pueden cambiar. Te acompaño desde la
+                    experiencia real, sin teorías vacías.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Misión -->
+            <div
+              class="p-8 rounded-2xl"
+              style="
+                background-color: #1f1f1f;
+                border: 2px solid rgba(187, 148, 118, 0.2);
+              "
+            >
+              <div class="flex items-start gap-4 mb-4">
+                <div class="flex-shrink-0">
+                  <i
+                    class="fas fa-bullseye text-3xl"
+                    style="color: #bb9476"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-3" style="color: #ffebd8">
+                    Mi Misión
+                  </h4>
+                  <p style="color: #c0c0c0; line-height: 1.8">
+                    Brindar herramientas prácticas y espirituales para activar
+                    tu poder interior y vivir con propósito auténtico. Tu
+                    transformación es posible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="space-y-12">
-        <!-- Historia Personal -->
-        <div class="bg-gray-50 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6">Del Dolor al Propósito</h3>
-          <div class="prose prose-lg text-gray-700 max-w-none">
-            <p>
-              Mi historia de transformación comenzó con experiencias profundamente desafiantes que marcaron mi vida. 
-              He transitado por depresiones, traumas, procesos de emigración y reconstrucción total que me enseñaron 
-              la verdadera naturaleza de la resilencia humana.
-            </p>
-            <p>
-              Estas experiencias me llevaron a una comprensión profunda: el sufrimiento puede convertirse en el 
-              maestro más poderoso si elegimos aprender de él. Decidí transformar mi dolor en propósito y dedicar 
-              mi vida a acompañar a otras personas en sus procesos de crecimiento.
-            </p>
-          </div>
-        </div>
-
-        <!-- Filosofía -->
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-amber-50 rounded-xl p-6">
-            <h4 class="text-xl font-bold text-gray-900 mb-4">Mi Filosofía</h4>
-            <p class="text-gray-700">
-              Creo profundamente que las personas no están "rotas" sino que están repitiendo patrones que 
-              pueden cambiar. Mi enfoque se basa en acompañar desde la experiencia real, no desde conceptos teóricos.
-            </p>
-          </div>
-          <div class="bg-amber-50 rounded-xl p-6">
-            <h4 class="text-xl font-bold text-gray-900 mb-4">Mi Misión</h4>
-            <p class="text-gray-700">
-              Brindar herramientas prácticas y espirituales para que las personas transformen su historia, 
-              activen su poder interior y vivan con propósito auténtico.
-            </p>
-          </div>
-        </div>
-
-        <!-- Influencias -->
-        <div class="text-center">
-          <h4 class="text-xl font-bold text-gray-900 mb-6">Influencias y Mentores</h4>
-          <div class="flex flex-wrap justify-center gap-8 text-gray-600">
-            <div class="text-center">
-              <div class="font-semibold">Tony Robbins</div>
-              <div class="text-sm">Desarrollo Personal</div>
-            </div>
-            <div class="text-center">
-              <div class="font-semibold">John C. Maxwell</div>
-              <div class="text-sm">Liderazgo</div>
-            </div>
-            <div class="text-center">
-              <div class="font-semibold">Conexión Espiritual</div>
-              <div class="text-sm">Relación con Dios</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Programas -->
-  <section id="programas" class="py-20 bg-gray-50 border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Mis Programas</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Programas de transformación diseñados desde la experiencia real para generar cambios profundos y duraderos.
+    <!-- Programas Section -->
+    <section id="programas" class="section bg-dark-gradient">
+      <div class="container-custom">
+        <h2 class="section-title">
+          Programa <span class="text-gradient-accent">Insignia</span>
+        </h2>
+        <p class="section-subtitle">
+          Un proceso intensivo diseñado para generar cambios profundos en solo 8
+          semanas
         </p>
-      </div>
 
-      <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Programa Principal Actual -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-          <div class="p-8">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span class="text-amber-600 text-xl">⚡</span>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">Indomismo Humano</h3>
-                <div class="text-sm text-amber-600 font-medium">PROGRAMA ACTIVO</div>
-              </div>
-            </div>
-            
-            <p class="text-gray-700 mb-6 leading-relaxed">
-              Programa integral de transformación personal que combina neurociencia, espiritualidad y acción concreta 
-              para generar cambios profundos en 8 semanas.
-            </p>
-
-            <div class="space-y-3 mb-6">
-              <div class="flex items-center gap-2 text-gray-600">
-                <span class="text-green-500">✓</span>
-                <span>Transformación integral en 8 semanas</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <span class="text-green-500">✓</span>
-                <span>Mentoría personalizada 1:1</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <span class="text-green-500">✓</span>
-                <span>Metodología científica y espiritual</span>
-              </div>
-              <div class="flex items-center gap-2 text-gray-600">
-                <span class="text-green-500">✓</span>
-                <span>98% tasa de éxito comprobada</span>
-              </div>
+        <!-- Programa Principal: Indomismo Humano -->
+        <div class="max-w-5xl mx-auto mb-16 scroll-reveal">
+          <div
+            class="p-10 rounded-3xl"
+            style="
+              background: linear-gradient(135deg, #3f0c1e, #2a0814);
+              border: 2px solid rgba(187, 148, 118, 0.4);
+              box-shadow: 0 20px 60px rgba(187, 148, 118, 0.1);
+            "
+          >
+            <!-- Header del programa -->
+            <div class="text-center mb-8">
+              <span
+                class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4"
+                style="
+                  background: linear-gradient(135deg, #bb9476, #9f7a5c);
+                  color: #ffebd8;
+                "
+              >
+                ⭐ Programa Activo
+              </span>
+              <h3
+                class="text-4xl md:text-5xl font-bold mb-4"
+                style="color: #ffebd8"
+              >
+                Indomismo Humano
+              </h3>
+              <p class="text-xl mb-6" style="color: #ece5d7">
+                Transformación integral en 8 semanas
+              </p>
+              <div
+                class="h-1 w-24 mx-auto rounded-full"
+                style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+              ></div>
             </div>
 
-            <div class="flex gap-3">
-              <button class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-3 rounded-lg transition-all flex-1">
+            <!-- Descripción -->
+            <div class="mb-8 text-center max-w-3xl mx-auto">
+              <p class="text-lg mb-4" style="color: #c0c0c0; line-height: 1.8">
+                Un enfoque único que combina
+                <strong style="color: #bb9476"
+                  >neurociencia + espiritualidad + acción concreta</strong
+                >
+                para generar cambios profundos y duraderos.
+              </p>
+              <p class="text-lg" style="color: #c0c0c0; line-height: 1.8">
+                Mentoría 1:1 con seguimiento diario. Resultados visibles desde
+                la semana 4.
+              </p>
+            </div>
+
+            <!-- Beneficios en Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+              <div
+                class="flex items-start gap-4 p-6 rounded-xl"
+                style="
+                  background: rgba(187, 148, 118, 0.1);
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex-shrink-0">
+                  <i
+                    class="fas fa-check-circle text-2xl"
+                    style="color: #bb9476"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-2" style="color: #ffebd8">
+                    Transformación Integral
+                  </h4>
+                  <p class="text-sm" style="color: #a0a0a0">
+                    Cambios profundos en solo 8 semanas con metodología probada
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 p-6 rounded-xl"
+                style="
+                  background: rgba(187, 148, 118, 0.1);
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex-shrink-0">
+                  <i
+                    class="fas fa-user-check text-2xl"
+                    style="color: #bb9476"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-2" style="color: #ffebd8">
+                    Mentoría Personalizada 1:1
+                  </h4>
+                  <p class="text-sm" style="color: #a0a0a0">
+                    Acompañamiento individual adaptado a tu proceso único
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 p-6 rounded-xl"
+                style="
+                  background: rgba(187, 148, 118, 0.1);
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex-shrink-0">
+                  <i class="fas fa-brain text-2xl" style="color: #bb9476"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-2" style="color: #ffebd8">
+                    Metodología Científica y Espiritual
+                  </h4>
+                  <p class="text-sm" style="color: #a0a0a0">
+                    Neurociencia aplicada + herramientas espirituales prácticas
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-4 p-6 rounded-xl"
+                style="
+                  background: rgba(187, 148, 118, 0.1);
+                  border: 1px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex-shrink-0">
+                  <i class="fas fa-star text-2xl" style="color: #bb9476"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-2" style="color: #ffebd8">
+                    98% de Satisfacción
+                  </h4>
+                  <p class="text-sm" style="color: #a0a0a0">
+                    Resultados comprobados por más de 1000 mujeres
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <button class="btn-primary btn-lg">
+                <i class="fas fa-book-open"></i>
                 Conocer Programa Completo
               </button>
-              <button class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-4 py-3 rounded-lg transition-all">
-                <span class="text-lg">📋</span>
+              <button class="btn-outline btn-lg">
+                <i class="fas fa-phone"></i>
+                Agenda una Llamada
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Próximos Programas -->
-        <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 border-2 border-dashed border-gray-300">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-gray-500 text-2xl">🚀</span>
+        <!-- Métricas de Autoridad -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 scroll-reveal">
+          <div
+            class="text-center p-6 rounded-xl"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+              1000+
             </div>
-            <h3 class="text-2xl font-bold text-gray-700 mb-4">Próximos Programas</h3>
-            <p class="text-gray-600 mb-8">
-              Estoy desarrollando nuevos programas especializados que complementarán la oferta actual. 
-              Mantente atenta a los lanzamientos.
-            </p>
-
-            <div class="space-y-4 mb-8">
-              <div class="bg-white/50 rounded-lg p-4 text-left">
-                <div class="font-semibold text-gray-700">Programa Empresarial</div>
-                <div class="text-sm text-gray-600">Para mujeres emprendedoras</div>
-                <div class="text-xs text-amber-600 font-medium">En desarrollo</div>
-              </div>
-              <div class="bg-white/50 rounded-lg p-4 text-left">
-                <div class="font-semibold text-gray-700">Mentoría de Liderazgo</div>
-                <div class="text-sm text-gray-600">Para líderes en crecimiento</div>
-                <div class="text-xs text-amber-600 font-medium">Próximamente</div>
-              </div>
+            <div class="text-sm" style="color: #a0a0a0">
+              Mujeres Transformadas
             </div>
-
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-3 rounded-lg transition-all shadow-md hover:shadow-lg transform hover:scale-105">
-              🔔 Notificarme del Lanzamiento
-            </button>
+          </div>
+          <div
+            class="text-center p-6 rounded-xl"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+              98%
+            </div>
+            <div class="text-sm" style="color: #a0a0a0">Tasa de Éxito</div>
+          </div>
+          <div
+            class="text-center p-6 rounded-xl"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <div class="text-4xl font-bold mb-2" style="color: #bb9476">15</div>
+            <div class="text-sm" style="color: #a0a0a0">
+              Años de Experiencia
+            </div>
+          </div>
+          <div
+            class="text-center p-6 rounded-xl"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+              50+
+            </div>
+            <div class="text-sm" style="color: #a0a0a0">Países Alcanzados</div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Estadísticas de Impacto -->
-      <div class="mt-16 grid md:grid-cols-4 gap-8 text-center">
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-3xl font-bold text-amber-600 mb-2">1000+</div>
-          <div class="text-gray-600 font-medium">Mujeres Transformadas</div>
-        </div>
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-3xl font-bold text-amber-600 mb-2">98%</div>
-          <div class="text-gray-600 font-medium">Tasa de Éxito</div>
-        </div>
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-3xl font-bold text-amber-600 mb-2">15</div>
-          <div class="text-gray-600 font-medium">Años de Experiencia</div>
-        </div>
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-3xl font-bold text-amber-600 mb-2">50+</div>
-          <div class="text-gray-600 font-medium">Países Alcanzados</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Testimonios -->
-  <section id="testimonios" class="py-20 bg-gradient-to-br from-white via-amber-50/30 to-white relative overflow-hidden border-b border-gray-100">
-    <!-- Elementos decorativos sutiles -->
-    <div class="absolute top-10 left-10 w-32 h-32 bg-amber-100 rounded-full opacity-20 blur-3xl"></div>
-    <div class="absolute bottom-20 right-20 w-24 h-24 bg-amber-200 rounded-full opacity-30 blur-2xl"></div>
-    
-    <div class="max-w-6xl mx-auto px-4 relative z-10">
-      <div class="text-center mb-16">
-        <!-- Badge sutil -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-amber-100/50 text-amber-700 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-          <span>⭐</span>
-          Testimonios Verificados
-        </div>
-        
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          Lo Que Dicen Mis <span class="text-amber-600">Clientas</span>
+    <!-- Áreas de Enfoque Section -->
+    <section class="section">
+      <div class="container-custom">
+        <h2 class="section-title">
+          Áreas De <span class="text-gradient-accent">Enfoque</span>
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Historias reales de transformación. Estas mujeres decidieron cambiar su historia y hoy viven una vida auténtica y plena.
+        <p class="section-subtitle">
+          Herramientas prácticas para tu transformación integral
         </p>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-heart-broken"></i>
+            </div>
+            <h3 class="card-title">Sanación de Traumas</h3>
+            <p class="card-text">
+              Libera patrones dolorosos del pasado y reconstruye tu autoestima.
+              Acompañamiento genuino para transformar el dolor en fortaleza.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-crown"></i>
+            </div>
+            <h3 class="card-title">Liderazgo Femenino</h3>
+            <p class="card-text">
+              Descubre y desarrolla tu poder de liderazgo auténtico. Transforma
+              tu negocio y tu vida personal desde tu esencia femenina.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-compass"></i>
+            </div>
+            <h3 class="card-title">Propósito de Vida</h3>
+            <p class="card-text">
+              Convierte tu dolor en propósito y descubre tu misión única.
+              Aprende a acompañar a otros desde tu propia experiencia de
+              sanación.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="card-title">Neurociencia Aplicada</h3>
+            <p class="card-text">
+              Reprograma patrones mentales limitantes con técnicas científicas.
+              Cambia tu cerebro, cambia tu vida de manera permanente.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-om"></i>
+            </div>
+            <h3 class="card-title">Espiritualidad Práctica</h3>
+            <p class="card-text">
+              Herramientas espirituales aplicables en tu día a día. Conecta con
+              tu poder interior y vive desde tu autenticidad más profunda.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card-hover-primary scroll-reveal">
+            <div class="card-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="card-title">Acción y Resultados</h3>
+            <p class="card-text">
+              De la teoría a la práctica: implementación concreta que genera
+              cambios visibles. Sin excusas, con estrategias que funcionan.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Grid de Testimonios en Video -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        
-        <!-- Testimonio 1 -->
-        <div class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-amber-200 hover:-translate-y-1">
-          <div class="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-6 relative overflow-hidden shadow-inner">
-            <!-- Video real -->
-            <video controls class="w-full h-full object-cover rounded-xl">
-              <source src="../assets/videos/TEST AMPARO.mp4" type="video/mp4">
-              Tu navegador no soporta el elemento video.
-            </video>
-            <!-- Badge de video -->
-            <div class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-md text-xs font-medium backdrop-blur-sm">
-              Video
-            </div>
-          </div>
-          
-          <div class="space-y-4">
-            <!-- Header con avatar -->
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">
-                ME
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900 text-lg">María Elena R.</h4>
-                <div class="text-sm text-gray-500">Cliente Verificada</div>
-              </div>
-            </div>
-            
-            <!-- Quote mejorada -->
-            <blockquote class="text-gray-700 text-sm leading-relaxed italic bg-gray-50 p-4 rounded-lg border-l-4 border-amber-400">
-              "Después de 8 semanas con Amparo, logré transformar completamente mi relación conmigo misma. 
-              Su metodología realmente funciona."
-            </blockquote>
-            
-            <!-- Rating y programa -->
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-1 text-amber-500">
-                <span>⭐⭐⭐⭐⭐</span>
-              </div>
-              <div class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">
-                Indomismo Humano
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonio 2 -->
-        <div class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-amber-200 hover:-translate-y-1">
-          <div class="aspect-video bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl mb-6 relative overflow-hidden shadow-inner">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                  <span class="text-amber-600 text-2xl">▶</span>
-                </div>
-                <div class="text-amber-800 font-medium">Video Testimonio</div>
-              </div>
-            </div>
-            <!-- Badge de placeholder -->
-            <div class="absolute top-3 right-3 bg-amber-600 text-white px-2 py-1 rounded-md text-xs font-medium">
-              Próximamente
-            </div>
-          </div>
-          
-          <div class="space-y-4">
-            <!-- Header con avatar -->
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">
-                CS
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900 text-lg">Carmen S.</h4>
-                <div class="text-sm text-gray-500">Cliente Verificada</div>
-              </div>
-            </div>
-            
-            <!-- Quote mejorada -->
-            <blockquote class="text-gray-700 text-sm leading-relaxed italic bg-gray-50 p-4 rounded-lg border-l-4 border-purple-400">
-              "Amparo me ayudó a entender que no estaba rota, solo repetía patrones. 
-              Ahora tengo las herramientas para crear mi propia historia."
-            </blockquote>
-            
-            <!-- Rating y programa -->
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-1 text-amber-500">
-                <span>⭐⭐⭐⭐⭐</span>
-              </div>
-              <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">
-                Mentoría Personal
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonio 3 -->
-        <div class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-amber-200 hover:-translate-y-1">
-          <div class="aspect-video bg-gradient-to-br from-green-100 to-emerald-200 rounded-xl mb-6 relative overflow-hidden shadow-inner">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                  <span class="text-emerald-600 text-2xl">▶</span>
-                </div>
-                <div class="text-emerald-800 font-medium">Video Testimonio</div>
-              </div>
-            </div>
-            <!-- Badge de placeholder -->
-            <div class="absolute top-3 right-3 bg-emerald-600 text-white px-2 py-1 rounded-md text-xs font-medium">
-              Próximamente
-            </div>
-          </div>
-          
-          <div class="space-y-4">
-            <!-- Header con avatar -->
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">
-                AL
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900 text-lg">Ana Lucía M.</h4>
-                <div class="text-sm text-gray-500">Cliente Verificada</div>
-              </div>
-            </div>
-            
-            <!-- Quote mejorada -->
-            <blockquote class="text-gray-700 text-sm leading-relaxed italic bg-gray-50 p-4 rounded-lg border-l-4 border-emerald-400">
-              "El enfoque espiritual y práctico de Amparo me cambió la vida. 
-              Encontré mi propósito y ahora vivo desde mi poder auténtico."
-            </blockquote>
-            
-            <!-- Rating y programa -->
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-1 text-amber-500">
-                <span>⭐⭐⭐⭐⭐</span>
-              </div>
-              <div class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-medium">
-                Transformación Integral
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonio 4 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-          <div class="aspect-video bg-gray-200 rounded-lg mb-4 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg">
-                  <span class="text-amber-600 text-2xl">▶</span>
-                </div>
-                <div class="text-amber-800 font-medium">Video Testimonio</div>
-              </div>
-            </div>
-          </div>
-          <div class="space-y-3">
-            <h4 class="font-bold text-gray-900">Isabella R.</h4>
-            <p class="text-gray-600 text-sm italic">
-              "Gracias a Amparo pude superar mis traumas y reconstruir mi autoestima. 
-              Su acompañamiento es genuino y transformador."
+    <!-- Sección de Características Destacadas -->
+    <section class="section bg-dark-gradient">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-motivational">
+              ¿Por Qué Elegirnos?
+            </h2>
+            <p class="text-lg mb-8" style="color: #c0c0c0; line-height: 1.8">
+              No se trata solo de motivación temporal. Se trata de una
+              transformación profunda y duradera que te permitirá alcanzar tus
+              metas más ambiciosas.
             </p>
-            <div class="flex items-center gap-1 text-amber-500">
-              <span>⭐⭐⭐⭐⭐</span>
-              <span class="text-sm text-gray-600 ml-2">Sanación de Traumas</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Testimonio 5 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-          <div class="aspect-video bg-gray-200 rounded-lg mb-4 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg">
-                  <span class="text-amber-600 text-2xl">▶</span>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(187, 148, 118, 0.2),
+                      rgba(187, 148, 118, 0.05)
+                    );
+                    border: 2px solid rgba(187, 148, 118, 0.3);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: #bb9476; font-size: 1.5rem"
+                  ></i>
                 </div>
-                <div class="text-amber-800 font-medium">Video Testimonio</div>
+                <div>
+                  <h4 class="font-semibold text-xl mb-2" style="color: #ffebd8">
+                    Método Probado
+                  </h4>
+                  <p style="color: #a0a0a0; line-height: 1.7">
+                    Más de 10 años de experiencia transformando vidas con
+                    técnicas basadas en neurociencia y psicología positiva.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(187, 148, 118, 0.2),
+                      rgba(187, 148, 118, 0.05)
+                    );
+                    border: 2px solid rgba(187, 148, 118, 0.3);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: #bb9476; font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-xl mb-2" style="color: #ffebd8">
+                    Acompañamiento Personalizado
+                  </h4>
+                  <p style="color: #a0a0a0; line-height: 1.7">
+                    Cada persona es única. Por eso, adaptamos nuestro enfoque a
+                    tus necesidades específicas y ritmo personal.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(187, 148, 118, 0.2),
+                      rgba(187, 148, 118, 0.05)
+                    );
+                    border: 2px solid rgba(187, 148, 118, 0.3);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: #bb9476; font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-xl mb-2" style="color: #ffebd8">
+                    Resultados Tangibles
+                  </h4>
+                  <p style="color: #a0a0a0; line-height: 1.7">
+                    Medimos tu progreso con indicadores claros. Verás cambios
+                    reales en tu vida desde las primeras sesiones.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="space-y-3">
-            <h4 class="font-bold text-gray-900">Patricia V.</h4>
-            <p class="text-gray-600 text-sm italic">
-              "El programa de Amparo me dio las herramientas para ser la líder que siempre quise ser. 
-              Transformé mi negocio y mi vida personal."
-            </p>
-            <div class="flex items-center gap-1 text-amber-500">
-              <span>⭐⭐⭐⭐⭐</span>
-              <span class="text-sm text-gray-600 ml-2">Liderazgo Femenino</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Testimonio 6 -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-          <div class="aspect-video bg-gray-200 rounded-lg mb-4 relative overflow-hidden">
-            <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg">
-                  <span class="text-amber-600 text-2xl">▶</span>
+          <div class="scroll-reveal">
+            <div class="relative">
+              <div
+                class="rounded-3xl shadow-2xl flex items-center justify-center p-12"
+                style="
+                  background: linear-gradient(135deg, #3f0c1e, #2a0814);
+                  min-height: 400px;
+                  border: 2px solid rgba(187, 148, 118, 0.3);
+                "
+              >
+                <div class="text-center">
+                  <i
+                    class="fas fa-quote-left"
+                    style="
+                      font-size: 4rem;
+                      color: rgba(255, 235, 216, 0.2);
+                      margin-bottom: 1rem;
+                    "
+                  ></i>
+                  <p
+                    class="text-2xl font-semibold italic"
+                    style="color: #ffebd8; line-height: 1.6"
+                  >
+                    "El único límite que existe es el que tú mismo te impones"
+                  </p>
                 </div>
-                <div class="text-amber-800 font-medium">Video Testimonio</div>
               </div>
-            </div>
-          </div>
-          <div class="space-y-3">
-            <h4 class="font-bold text-gray-900">Sofía L.</h4>
-            <p class="text-gray-600 text-sm italic">
-              "Amparo me enseñó que mi dolor podía convertirse en propósito. 
-              Ahora ayudo a otras mujeres desde mi propia experiencia de sanación."
-            </p>
-            <div class="flex items-center gap-1 text-amber-500">
-              <span>⭐⭐⭐⭐⭐</span>
-              <span class="text-sm text-gray-600 ml-2">Propósito de Vida</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Estadísticas de Impacto -->
-      <div class="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 rounded-3xl p-8 shadow-lg border border-amber-200/50 relative overflow-hidden">
-        <!-- Elementos decorativos -->
-        <div class="absolute top-0 right-0 w-40 h-40 bg-amber-200/20 rounded-full -translate-y-20 translate-x-20"></div>
-        <div class="absolute bottom-0 left-0 w-32 h-32 bg-orange-200/20 rounded-full translate-y-16 -translate-x-16"></div>
-        
-        <div class="relative z-10">
-          <div class="text-center mb-10">
-            <!-- Icono central -->
-            <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span class="text-white text-2xl">🏆</span>
+    <!-- Historias de Éxito Section -->
+    <section id="testimonios" class="section bg-dark-gradient">
+      <div class="container-custom">
+        <div class="text-center mb-8">
+          <span
+            class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(187, 148, 118, 0.2),
+                rgba(187, 148, 118, 0.05)
+              );
+              color: #bb9476;
+              border: 1px solid rgba(187, 148, 118, 0.3);
+            "
+          >
+            ⭐ Testimonios Verificados
+          </span>
+        </div>
+        <h2 class="section-title">
+          Lo Que Dicen <span class="text-gradient-accent">Mis Clientas</span>
+        </h2>
+        <p class="section-subtitle">
+          Historias reales de transformación que muestran la profundidad y la
+          rapidez del Método Indomismo
+        </p>
+
+        <!-- Testimonio destacado en video -->
+        <div class="max-w-4xl mx-auto mb-12 scroll-reveal">
+          <div
+            class="p-8 rounded-2xl"
+            style="
+              background: linear-gradient(135deg, #3f0c1e, #2a0814);
+              border: 2px solid rgba(187, 148, 118, 0.3);
+            "
+          >
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold mb-2" style="color: #ffebd8">
+                María Elena R.
+              </h3>
+              <p class="text-sm" style="color: #bb9476">Indomismo Humano</p>
             </div>
-            
-            <h3 class="text-3xl font-bold text-gray-900 mb-4">
-              Impacto Real, <span class="text-amber-600">Resultados Comprobados</span>
+            <p
+              class="text-lg italic text-center mb-6"
+              style="color: #ece5d7; line-height: 1.8"
+            >
+              "Después de 8 semanas con Amparo, transformé completamente mi
+              relación conmigo misma. Su metodología funciona y se siente
+              acompañamiento real en cada sesión."
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div
+            class="testimonial-card scroll-reveal"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <p class="testimonial-text" style="color: #c0c0c0">
+              "Gracias a Amparo pude superar mis traumas y reconstruir mi
+              autoestima. Su acompañamiento es genuino y transformador."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+              >
+                IR
+              </div>
+              <div class="testimonial-info">
+                <div class="name" style="color: #ffebd8">Isabella R.</div>
+                <div class="role" style="color: #808080">
+                  Sanación de traumas • Proceso 1:1
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="testimonial-card scroll-reveal"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <p class="testimonial-text" style="color: #c0c0c0">
+              "El programa de Amparo me dio las herramientas para ser la líder
+              que siempre quise ser. Transformé mi negocio y mi vida personal."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+              >
+                PV
+              </div>
+              <div class="testimonial-info">
+                <div class="name" style="color: #ffebd8">Patricia V.</div>
+                <div class="role" style="color: #808080">
+                  Liderazgo femenino • Indomismo Humano
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="testimonial-card scroll-reveal"
+            style="
+              background-color: #1f1f1f;
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <p class="testimonial-text" style="color: #c0c0c0">
+              "Amparo me enseñó que mi dolor podía convertirse en propósito. Hoy
+              acompaño a otras mujeres desde mi propia experiencia de sanación."
+            </p>
+            <div class="testimonial-author">
+              <div
+                class="testimonial-avatar"
+                style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+              >
+                SL
+              </div>
+              <div class="testimonial-info">
+                <div class="name" style="color: #ffebd8">Sofía L.</div>
+                <div class="role" style="color: #808080">
+                  Propósito de vida • Mentoría
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Métricas finales -->
+        <div class="text-center mt-16 scroll-reveal">
+          <h3 class="text-3xl font-bold mb-6" style="color: #ffebd8">
+            Impacto Real, Resultados Comprobados
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div>
+              <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+                98%
+              </div>
+              <div class="text-sm" style="color: #a0a0a0">Satisfacción</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+                1000+
+              </div>
+              <div class="text-sm" style="color: #a0a0a0">
+                Vidas Transformadas
+              </div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+                15
+              </div>
+              <div class="text-sm" style="color: #a0a0a0">Años Experiencia</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold mb-2" style="color: #bb9476">
+                50+
+              </div>
+              <div class="text-sm" style="color: #a0a0a0">Países</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Libros Section -->
+    <section id="libros" class="section">
+      <div class="container-custom">
+        <h2 class="section-title">
+          Mis <span class="text-gradient-accent">Libros</span>
+        </h2>
+        <p class="section-subtitle">
+          Compartiendo herramientas y reflexiones surgidas de mi propio proceso
+          de expansión
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Libro 1 -->
+          <div class="scroll-reveal">
+            <div
+              class="p-8 rounded-2xl h-full"
+              style="
+                background: linear-gradient(135deg, #3f0c1e, #2a0814);
+                border: 2px solid rgba(187, 148, 118, 0.3);
+              "
+            >
+              <div class="text-center mb-6">
+                <div
+                  class="w-32 h-48 mx-auto mb-6 rounded-lg flex items-center justify-center text-6xl"
+                  style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+                >
+                  📖
+                </div>
+                <h3 class="text-3xl font-bold mb-3" style="color: #ffebd8">
+                  Amparo - Volumen 1
+                </h3>
+                <div
+                  class="h-1 w-16 mx-auto rounded-full mb-4"
+                  style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+                ></div>
+              </div>
+
+              <p
+                class="mb-6 text-center"
+                style="color: #c0c0c0; line-height: 1.8"
+              >
+                Las bases para iniciar tu transformación personal con
+                herramientas aplicables desde el primer día. Un viaje hacia tu
+                autenticidad más profunda.
+              </p>
+
+              <div class="flex flex-col gap-3">
+                <button class="btn-primary btn-lg w-full">
+                  <i class="fas fa-shopping-cart"></i>
+                  Adquirir
+                </button>
+                <button class="btn-outline btn-lg w-full">
+                  <i class="fas fa-eye"></i>
+                  Vista Previa
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 2 -->
+          <div class="scroll-reveal">
+            <div
+              class="p-8 rounded-2xl h-full"
+              style="
+                background: linear-gradient(135deg, #3f0c1e, #2a0814);
+                border: 2px solid rgba(187, 148, 118, 0.3);
+              "
+            >
+              <div class="text-center mb-6">
+                <div
+                  class="w-32 h-48 mx-auto mb-6 rounded-lg flex items-center justify-center text-6xl"
+                  style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+                >
+                  📚
+                </div>
+                <h3 class="text-3xl font-bold mb-3" style="color: #ffebd8">
+                  Amparo - Volumen 2
+                </h3>
+                <div
+                  class="h-1 w-16 mx-auto rounded-full mb-4"
+                  style="background: linear-gradient(135deg, #bb9476, #9f7a5c)"
+                ></div>
+              </div>
+
+              <p
+                class="mb-6 text-center"
+                style="color: #c0c0c0; line-height: 1.8"
+              >
+                Metodologías avanzadas para sostener la expansión y manifestar
+                resultados extraordinarios. Profundiza en tu poder interior.
+              </p>
+
+              <div class="flex flex-col gap-3">
+                <button class="btn-primary btn-lg w-full">
+                  <i class="fas fa-shopping-cart"></i>
+                  Adquirir
+                </button>
+                <button class="btn-outline btn-lg w-full">
+                  <i class="fas fa-eye"></i>
+                  Vista Previa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section
+      id="contacto"
+      class="section"
+      style="background: linear-gradient(135deg, #3f0c1e 0%, #2a0814 100%)"
+    >
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="section-title" style="color: #ffebd8">
+            Trabajemos <span class="text-gradient-accent">Juntas</span>
+          </h2>
+          <p class="section-subtitle mb-12" style="color: #ece5d7">
+            Si buscas una mentora que te acompañe desde la experiencia real
+            hacia tu transformación auténtica, estoy aquí para ti.
+          </p>
+
+          <!-- Información de contacto -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div
+              class="text-center p-6 rounded-xl"
+              style="
+                background-color: #1f1f1f;
+                border: 1px solid rgba(187, 148, 118, 0.2);
+              "
+            >
+              <i
+                class="fas fa-envelope text-3xl mb-3"
+                style="color: #bb9476"
+              ></i>
+              <h4 class="font-semibold mb-2" style="color: #ffebd8">Email</h4>
+              <a
+                href="mailto:contacto@amparomoles.com"
+                class="text-sm"
+                style="color: #a0a0a0"
+              >
+                contacto@amparomoles.com
+              </a>
+            </div>
+            <div
+              class="text-center p-6 rounded-xl"
+              style="
+                background-color: #1f1f1f;
+                border: 1px solid rgba(187, 148, 118, 0.2);
+              "
+            >
+              <i
+                class="fas fa-building text-3xl mb-3"
+                style="color: #bb9476"
+              ></i>
+              <h4 class="font-semibold mb-2" style="color: #ffebd8">Empresa</h4>
+              <p class="text-sm" style="color: #a0a0a0">Uwealth Group</p>
+            </div>
+            <div
+              class="text-center p-6 rounded-xl"
+              style="
+                background-color: #1f1f1f;
+                border: 1px solid rgba(187, 148, 118, 0.2);
+              "
+            >
+              <i
+                class="fas fa-map-marker-alt text-3xl mb-3"
+                style="color: #bb9476"
+              ></i>
+              <h4 class="font-semibold mb-2" style="color: #ffebd8">
+                Ubicación
+              </h4>
+              <p class="text-sm" style="color: #a0a0a0">Estados Unidos</p>
+            </div>
+          </div>
+
+          <!-- Opciones de colaboración -->
+          <div class="mb-12">
+            <h3
+              class="text-2xl font-bold text-center mb-8"
+              style="color: #ffebd8"
+            >
+              Opciones de Colaboración
             </h3>
-            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
-              Más de una década acompañando mujeres en su proceso de transformación auténtica.
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <button
+                class="p-6 rounded-xl text-left transition-all hover:scale-105"
+                style="
+                  background-color: #1f1f1f;
+                  border: 2px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex items-start gap-4">
+                  <i
+                    class="fas fa-user-graduate text-2xl"
+                    style="color: #bb9476"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold mb-2" style="color: #ffebd8">
+                      Programas de Transformación
+                    </h4>
+                    <p class="text-sm" style="color: #a0a0a0">
+                      Mentoría personal y grupal
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button
+                class="p-6 rounded-xl text-left transition-all hover:scale-105"
+                style="
+                  background-color: #1f1f1f;
+                  border: 2px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex items-start gap-4">
+                  <i
+                    class="fas fa-microphone text-2xl"
+                    style="color: #bb9476"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold mb-2" style="color: #ffebd8">
+                      Conferencias y Eventos
+                    </h4>
+                    <p class="text-sm" style="color: #a0a0a0">
+                      Speaking, workshops y seminarios
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button
+                class="p-6 rounded-xl text-left transition-all hover:scale-105"
+                style="
+                  background-color: #1f1f1f;
+                  border: 2px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex items-start gap-4">
+                  <i
+                    class="fas fa-briefcase text-2xl"
+                    style="color: #bb9476"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold mb-2" style="color: #ffebd8">
+                      Consultoría Empresarial
+                    </h4>
+                    <p class="text-sm" style="color: #a0a0a0">
+                      Programas corporativos y liderazgo
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button
+                class="p-6 rounded-xl text-left transition-all hover:scale-105"
+                style="
+                  background-color: #1f1f1f;
+                  border: 2px solid rgba(187, 148, 118, 0.2);
+                "
+              >
+                <div class="flex items-start gap-4">
+                  <i class="fas fa-podcast text-2xl" style="color: #bb9476"></i>
+                  <div>
+                    <h4 class="font-bold mb-2" style="color: #ffebd8">
+                      Colaboraciones Media
+                    </h4>
+                    <p class="text-sm" style="color: #a0a0a0">
+                      Podcasts, entrevistas y contenido
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="scroll-reveal"
+            style="
+              background-color: #1f1f1f;
+              padding: 3rem;
+              border-radius: 2rem;
+              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+              border: 1px solid rgba(187, 148, 118, 0.2);
+            "
+          >
+            <form id="contactForm" class="space-y-6">
+              <div class="form-success" id="formSuccess">
+                ¡Mensaje enviado correctamente! Te contactaré pronto para
+                comenzar tu transformación.
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre Completo</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    class="form-input"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                  <span class="form-error" id="nombreError"
+                    >Por favor, ingresa tu nombre</span
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                  <span class="form-error" id="emailError"
+                    >Por favor, ingresa un email válido</span
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto" class="form-label">¿Qué Te Motiva?</label>
+                <input
+                  type="text"
+                  id="asunto"
+                  name="asunto"
+                  class="form-input"
+                  placeholder="Ej: Quiero alcanzar mis metas profesionales"
+                  required
+                />
+                <span class="form-error" id="asuntoError"
+                  >Por favor, cuéntame qué te motiva</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje" class="form-label">Tu Historia</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  class="form-textarea"
+                  placeholder="Cuéntame sobre tu situación actual y qué te gustaría lograr..."
+                  required
+                ></textarea>
+                <span class="form-error" id="mensajeError"
+                  >Por favor, comparte tu historia</span
+                >
+              </div>
+
+              <button type="submit" class="btn-primary btn-lg w-full">
+                <i class="fas fa-paper-plane"></i>
+                Comienza Tu Transformación
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-custom">
+        <div class="footer-content">
+          <!-- Columna 1: Sobre nosotros -->
+          <div class="footer-section">
+            <div class="mb-4">
+              <img
+                src="images/Logo_amparo_color_blancoV2_Fondos_Negro.png"
+                alt="Amparo Moles Logo"
+                class="footer-logo"
+                style="
+                  height: 60px;
+                  width: auto;
+                  object-fit: contain;
+                  margin-bottom: 1rem;
+                "
+              />
+            </div>
+            <p class="footer-text">
+              Escritora, empresaria y mentora especializada en transformación
+              personal. Acompañando a mujeres hacia su versión más auténtica
+              desde 2010.
             </p>
-          </div>
-          
-          <div class="grid md:grid-cols-4 gap-6">
-            <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all text-center border border-white/50">
-              <div class="text-4xl font-bold text-amber-600 mb-3">98%</div>
-              <div class="text-sm text-gray-700 font-medium">Tasa de Satisfacción</div>
+            <div
+              class="mt-4 p-4 rounded-lg"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(187, 148, 118, 0.1),
+                  rgba(187, 148, 118, 0.05)
+                );
+                border-left: 3px solid #bb9476;
+              "
+            >
+              <p class="italic text-sm" style="color: #ece5d7">
+                "Tu pasado no te define. Lo que haces con él, sí."
+              </p>
             </div>
-            <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all text-center border border-white/50">
-              <div class="text-4xl font-bold text-amber-600 mb-3">1000+</div>
-              <div class="text-sm text-gray-700 font-medium">Vidas Transformadas</div>
-            </div>
-            <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all text-center border border-white/50">
-              <div class="text-4xl font-bold text-amber-600 mb-3">15</div>
-              <div class="text-sm text-gray-700 font-medium">Años de Experiencia</div>
-            </div>
-            <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all text-center border border-white/50">
-              <div class="text-4xl font-bold text-amber-600 mb-3">50+</div>
-              <div class="text-sm text-gray-700 font-medium">Países Alcanzados</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- Sección Libros y Publicaciones -->
-  <section id="libros" class="py-20 bg-gray-100 border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Mis Libros</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          A través de mis libros comparto las herramientas y reflexiones que han surgido de mi propio proceso de transformación.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-        <!-- Libro 1 -->
-        <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 text-center">
-          <div class="w-32 h-40 bg-amber-200 rounded-lg mx-auto mb-6 flex items-center justify-center">
-            <span class="text-4xl text-amber-700">📖</span>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Amparo - Volumen 1</h3>
-          <p class="text-gray-700 mb-6">
-            Mi primera obra donde comparto las herramientas fundamentales para iniciar un proceso de transformación personal profunda.
-          </p>
-          <div class="flex gap-3 justify-center">
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all">
-              Adquirir
-            </button>
-            <button class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-6 py-2 rounded-lg transition-all">
-              Vista Previa
-            </button>
-          </div>
-        </div>
-
-        <!-- Libro 2 -->
-        <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 text-center">
-          <div class="w-32 h-40 bg-amber-200 rounded-lg mx-auto mb-6 flex items-center justify-center">
-            <span class="text-4xl text-amber-700">📚</span>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Amparo - Volumen 2</h3>
-          <p class="text-gray-700 mb-6">
-            Continuación que profundiza en las metodologías avanzadas para mantener y expandir la transformación personal.
-          </p>
-          <div class="flex gap-3 justify-center">
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all">
-              Adquirir
-            </button>
-            <button class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-6 py-2 rounded-lg transition-all">
-              Vista Previa
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Media y Apariciones -->
-  <section id="media" class="py-20 bg-white border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Media y Apariciones</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Como voz influyente en la comunidad latina de Estados Unidos, participo regularmente en medios y eventos.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Podcasts -->
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-center mb-6">
-            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-purple-600 text-2xl">🎙️</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900">Podcasts</h3>
-          </div>
-          <ul class="space-y-3 text-gray-600">
-            <li>• Emprendimiento Femenino Latino</li>
-            <li>• Transformación Personal USA</li>
-            <li>• Liderazgo Espiritual</li>
-            <li>• Mujeres Resilientes</li>
-          </ul>
-        </div>
-
-        <!-- Conferencias -->
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-center mb-6">
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-blue-600 text-2xl">🎤</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900">Conferencias</h3>
-          </div>
-          <ul class="space-y-3 text-gray-600">
-            <li>• Eventos de Desarrollo Personal</li>
-            <li>• Congresos de Mujeres</li>
-            <li>• Seminarios Empresariales</li>
-            <li>• Retiros de Transformación</li>
-          </ul>
-        </div>
-
-        <!-- Colaboraciones -->
-        <div class="bg-white rounded-xl p-6 shadow-md">
-          <div class="text-center mb-6">
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-green-600 text-2xl">🤝</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900">Colaboraciones</h3>
-          </div>
-          <ul class="space-y-3 text-gray-600">
-            <li>• Mentorías Conjuntas</li>
-            <li>• Programas Corporativos</li>
-            <li>• Alianzas Estratégicas</li>
-            <li>• Proyectos de Impacto Social</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- CTA para Media Kit -->
-      <div class="text-center mt-12">
-        <button class="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg transition-all">
-          Descargar Media Kit
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Contacto -->
-  <section id="contacto" class="py-20 bg-gray-50 border-b border-gray-200">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Trabajemos Juntas</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Si buscas una mentora que te acompañe desde la experiencia real hacia tu transformación auténtica, estoy aquí para ti.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Información de Contacto -->
-        <div class="space-y-8">
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
-            <div class="space-y-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span class="text-amber-600">📧</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900">Email</div>
-                  <div class="text-gray-600">contacto@amparomoles.com</div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span class="text-amber-600">🏢</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900">Empresa</div>
-                  <div class="text-gray-600">Uwealth Group</div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span class="text-amber-600">🌎</span>
-                </div>
-                <div>
-                  <div class="font-semibold text-gray-900">Ubicación</div>
-                  <div class="text-gray-600">Estados Unidos</div>
-                </div>
-              </div>
+            <div class="footer-social">
+              <a href="#" class="social-icon" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon" title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon" title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-icon" title="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
           </div>
 
-          <!-- Redes Sociales -->
-          <div>
-            <h4 class="text-lg font-bold text-gray-900 mb-4">Sígueme en:</h4>
-            <div class="flex gap-4">
-              <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center cursor-pointer hover:bg-pink-200 transition-colors">
-                <span class="text-pink-600 font-bold text-sm">IG</span>
-              </div>
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-200 transition-colors">
-                <span class="text-blue-600 font-bold text-sm">FB</span>
-              </div>
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-200 transition-colors">
-                <span class="text-blue-600 font-bold text-sm">LI</span>
-              </div>
-              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center cursor-pointer hover:bg-red-200 transition-colors">
-                <span class="text-red-600 font-bold text-sm">YT</span>
-              </div>
-            </div>
+          <!-- Columna 2: Navegación rápida -->
+          <div class="footer-section">
+            <h4 class="footer-title">Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="#inicio" class="footer-link">Inicio</a></li>
+              <li><a href="#sobre-mi" class="footer-link">Sobre Mí</a></li>
+              <li><a href="#programas" class="footer-link">Programas</a></li>
+              <li>
+                <a href="#testimonios" class="footer-link">Testimonios</a>
+              </li>
+              <li><a href="#libros" class="footer-link">Libros</a></li>
+              <li><a href="#contacto" class="footer-link">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Servicios -->
+          <div class="footer-section">
+            <h4 class="footer-title">Servicios</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Indomismo Humano</a></li>
+              <li><a href="#" class="footer-link">Sanación de Traumas</a></li>
+              <li><a href="#" class="footer-link">Liderazgo Femenino</a></li>
+              <li><a href="#" class="footer-link">Mentoría 1:1</a></li>
+              <li><a href="#" class="footer-link">Conferencias</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto -->
+          <div class="footer-section">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-links">
+              <li class="footer-text">
+                <i class="fas fa-envelope"></i> contacto@amparomoles.com
+              </li>
+              <li class="footer-text">
+                <i class="fas fa-building"></i> Uwealth Group
+              </li>
+              <li class="footer-text">
+                <i class="fas fa-map-marker-alt"></i> Estados Unidos
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- Opciones de Colaboración -->
-        <div class="space-y-6">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6">Opciones de Colaboración</h3>
-          
-          <div class="space-y-4">
-            <button class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-6 rounded-lg transition-all text-left">
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="font-bold">Programas de Transformación</div>
-                  <div class="text-sm opacity-90">Mentoría personal y programas grupales</div>
-                </div>
-                <span>→</span>
-              </div>
-            </button>
-
-            <button class="w-full border-2 border-gray-200 hover:border-amber-600 text-gray-700 hover:text-amber-600 font-semibold py-4 px-6 rounded-lg transition-all text-left">
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="font-bold">Conferencias y Eventos</div>
-                  <div class="text-sm">Speaking, workshops y seminarios</div>
-                </div>
-                <span>→</span>
-              </div>
-            </button>
-
-            <button class="w-full border-2 border-gray-200 hover:border-amber-600 text-gray-700 hover:text-amber-600 font-semibold py-4 px-6 rounded-lg transition-all text-left">
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="font-bold">Consultoría Empresarial</div>
-                  <div class="text-sm">Programas corporativos y liderazgo</div>
-                </div>
-                <span>→</span>
-              </div>
-            </button>
-
-            <button class="w-full border-2 border-gray-200 hover:border-amber-600 text-gray-700 hover:text-amber-600 font-semibold py-4 px-6 rounded-lg transition-all text-left">
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="font-bold">Colaboraciones Media</div>
-                  <div class="text-sm">Podcasts, entrevistas y contenido</div>
-                </div>
-                <span>→</span>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Corporativo -->
-  <footer class="bg-gray-900 text-white py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8 mb-12">
-        <!-- Logo y Descripción -->
-        <div class="md:col-span-2">
-          <img src="../assets/images/logos/logo.png" alt="Amparo Moles" class="h-12 w-auto mb-4 filter brightness-0 invert">
-          <p class="text-gray-300 mb-4">
-            Escritora, empresaria y mentora especializada en transformación personal. 
-            Acompañando a mujeres hacia su versión más auténtica desde 2010.
-          </p>
-          <p class="text-gray-400 text-sm">
-            "Tu pasado no te define. Lo que haces con él, sí." - Amparo Moles
+        <div class="footer-bottom" style="color: #808080">
+          <p>
+            &copy; 2025 Amparo Moles. Todos los derechos reservados. Uwealth
+            Group.
           </p>
         </div>
-
-        <!-- Enlaces Rápidos -->
-        <div>
-          <h4 class="font-bold text-white mb-4">Navegación</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="#sobre-mi" class="hover:text-amber-400 transition-colors">Sobre Mí</a></li>
-            <li><a href="#programas" class="hover:text-amber-400 transition-colors">Programas</a></li>
-            <li><a href="#testimonios" class="hover:text-amber-400 transition-colors">Testimonios</a></li>
-            <li><a href="#libros" class="hover:text-amber-400 transition-colors">Libros</a></li>
-            <li><a href="#media" class="hover:text-amber-400 transition-colors">Media</a></li>
-            <li><a href="#contacto" class="hover:text-amber-400 transition-colors">Contacto</a></li>
-          </ul>
-        </div>
-
-        <!-- Contacto -->
-        <div>
-          <h4 class="font-bold text-white mb-4">Contacto</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li>📧 contacto@amparomoles.com</li>
-            <li>🏢 Uwealth Group</li>
-            <li>🌎 Estados Unidos</li>
-          </ul>
-        </div>
       </div>
+    </footer>
 
-      <!-- Copyright -->
-      <div class="border-t border-gray-800 pt-8 text-center">
-        <p class="text-gray-400">
-          © 2025 Amparo Moles. Todos los derechos reservados. 
-          <span class="text-amber-400">Uwealth Group</span>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('header');
-      if (window.scrollY > 100) {
-        header.classList.add('shadow-lg');
-      } else {
-        header.classList.remove('shadow-lg');
-      }
-    });
-  </script>
-
-</body>
-
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
