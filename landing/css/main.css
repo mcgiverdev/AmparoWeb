@@ -2352,7 +2352,7 @@ select {
 }
 
 .hero-logo {
-  width: clamp(130px, 35vw, 180px);
+  width: clamp(360px, 65vw, 380px);
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
 }
 
@@ -2365,6 +2365,12 @@ select {
 @media (min-width: 1280px) {
   .hero-logo {
     width: clamp(180px, 18vw, 280px);
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-logo {
+    width: clamp(360px, 25vw, 280px);
   }
 }
 
