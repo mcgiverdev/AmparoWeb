@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Landing Indomismo</title>
+<meta name="description" content="Previsualización del proyecto de landing." />
+<meta property="og:title" content="Landing Indomismo" />
+<meta property="og:description" content="Previsualización del proyecto de landing." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="uploads/uploads/5/1760418805077-0bde53f8-0995-4a15-a233-e6d456d34605.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Landing Indomismo" />
+<meta name="twitter:description" content="Previsualización del proyecto de landing." />
+<meta name="twitter:image" content="uploads/uploads/5/1760418805077-0bde53f8-0995-4a15-a233-e6d456d34605.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script>
+window.tailwind = window.tailwind || {};
+window.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50: 'rgb(var(--color-brand-50) / <alpha-value>)',
+          100: 'rgb(var(--color-brand-100) / <alpha-value>)',
+          200: 'rgb(var(--color-brand-200) / <alpha-value>)',
+          300: 'rgb(var(--color-brand-300) / <alpha-value>)',
+          400: 'rgb(var(--color-brand-400) / <alpha-value>)',
+          500: 'rgb(var(--color-brand-500) / <alpha-value>)',
+          600: 'rgb(var(--color-brand-600) / <alpha-value>)',
+          700: 'rgb(var(--color-brand-700) / <alpha-value>)',
+          800: 'rgb(var(--color-brand-800) / <alpha-value>)',
+          900: 'rgb(var(--color-brand-900) / <alpha-value>)',
+          950: 'rgb(var(--color-brand-950) / <alpha-value>)',
+          DEFAULT: 'rgb(var(--color-brand-500) / <alpha-value>)',
+          foreground: 'rgb(var(--color-brand-foreground) / <alpha-value>)'
+        },
+        accent: {
+          100: 'rgb(var(--color-accent-100) / <alpha-value>)',
+          200: 'rgb(var(--color-accent-200) / <alpha-value>)',
+          300: 'rgb(var(--color-accent-300) / <alpha-value>)',
+          400: 'rgb(var(--color-accent-400) / <alpha-value>)',
+          500: 'rgb(var(--color-accent-500) / <alpha-value>)',
+          600: 'rgb(var(--color-accent-600) / <alpha-value>)',
+          DEFAULT: 'rgb(var(--color-accent-500) / <alpha-value>)',
+          foreground: 'rgb(var(--color-accent-foreground) / <alpha-value>)'
+        },
+        background: {
+          DEFAULT: 'rgb(var(--color-background) / <alpha-value>)',
+          muted: 'rgb(var(--color-background-muted) / <alpha-value>)'
+        },
+        surface: {
+          DEFAULT: 'rgb(var(--color-surface) / <alpha-value>)',
+          hover: 'rgb(var(--color-surface-hover) / <alpha-value>)'
+        },
+        foreground: {
+          DEFAULT: 'rgb(var(--color-foreground) / <alpha-value>)',
+          muted: 'rgb(var(--color-foreground-muted) / <alpha-value>)'
+        }
+      },
+      fontFamily: {
+        sans: ['var(--font-body, \"Inter\")', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-heading, \"Sora\")', 'system-ui', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<script defer src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+<style>:root {
+  color-scheme: light;
+  --color-background: 246 249 252;
+  --color-background-muted: 232 238 246;
+  --color-surface: 255 255 255;
+  --color-surface-hover: 240 244 250;
+  --color-foreground: 15 23 42;
+  --color-foreground-muted: 71 85 105;
+  --color-shadow: 15 23 42;
+  --color-brand-50: 240 247 255;
+  --color-brand-100: 214 233 255;
+  --color-brand-200: 174 211 255;
+  --color-brand-300: 122 180 255;
+  --color-brand-400: 65 142 255;
+  --color-brand-500: 23 101 255;
+  --color-brand-600: 19 78 224;
+  --color-brand-700: 18 61 179;
+  --color-brand-800: 19 47 138;
+  --color-brand-900: 18 31 95;
+  --color-brand-950: 11 19 61;
+  --color-brand-foreground: 255 255 255;
+  --color-accent-100: 208 250 255;
+  --color-accent-200: 162 244 255;
+  --color-accent-300: 107 231 255;
+  --color-accent-400: 47 211 245;
+  --color-accent-500: 10 183 222;
+  --color-accent-600: 8 147 183;
+  --color-accent-foreground: 15 23 42;
+  --color-neutral-50: 248 250 252;
+  --color-neutral-900: 15 23 42;
+  --font-heading: "Sora";
+  --font-body: "Inter";
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-background: 5 8 20;
+  --color-background-muted: 15 23 42;
+  --color-surface: 13 17 30;
+  --color-surface-hover: 31 41 55;
+  --color-foreground: 226 232 240;
+  --color-foreground-muted: 148 163 184;
+  --color-shadow: 2 6 23;
+  --color-neutral-50: 15 23 42;
+  --color-neutral-900: 226 232 240;
+}
+
+body {
+  background-color: rgb(var(--color-background) / 1);
+  color: rgb(var(--color-foreground) / 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body, "Inter"), system-ui, sans-serif;
+}
+
+.landing-renderer {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-section {
+  transition: background-color 0.25s ease, color 0.25s ease;
+  position: relative;
+}
+
+.landing-background--default {
+  background-color: rgb(var(--color-background) / 1) !important;
+  color: rgb(var(--color-foreground) / 1) !important;
+  background-image: none !important;
+}
+
+.landing-background--muted {
+  background-color: rgb(var(--color-background-muted) / 1) !important;
+  color: rgb(var(--color-foreground) / 1) !important;
+  background-image: none !important;
+}
+
+.landing-background--surface {
+  background-color: rgb(var(--color-surface) / 1) !important;
+  color: rgb(var(--color-foreground) / 1) !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+.landing-background--brand {
+  background-color: rgb(var(--color-brand-600) / 1) !important;
+  color: rgb(var(--color-brand-foreground) / 1) !important;
+  background-image: none !important;
+}
+
+.landing-background--light {
+  background-color: #ffffff !important;
+  color: rgb(var(--color-foreground) / 1) !important;
+  background-image: none !important;
+}
+
+.landing-background--dark {
+  background-color: rgb(var(--color-neutral-900) / 1) !important;
+  color: #ffffff !important;
+  background-image: none !important;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgb(var(--color-brand-500) / 1);
+  border-radius: var(--radius-md, 16px);
+  color: rgb(var(--color-brand-foreground) / 1);
+  box-shadow: 0 10px 25px -15px rgb(var(--color-brand-700) / 0.75);
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-primary:hover {
+  background-color: rgb(var(--color-brand-600) / 1);
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(var(--color-brand-300) / 0.4), 0 10px 25px -15px rgb(var(--color-brand-700) / 0.75);
+}
+
+.btn-danger {
+  background-color: #e11d48;
+  color: #fff;
+  box-shadow: 0 20px 35px -22px rgba(190, 24, 93, 0.75);
+}
+
+.btn-danger:hover {
+  background-color: #be123c;
+}
+
+.btn-danger:focus-visible {
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.3), 0 20px 35px -22px rgba(190, 24, 93, 0.75);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  border-radius: calc(var(--radius-md, 16px) - 4px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  color: rgb(var(--color-foreground) / 1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgb(var(--color-brand-50) / 1);
+  border-color: rgb(var(--color-brand-300) / 0.8);
+  color: rgb(var(--color-brand-600) / 1);
+}
+
+.btn-outline:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(var(--color-brand-200) / 0.5), 0 8px 18px -16px rgb(var(--color-shadow) / 0.35);
+}
+
+.dark .btn-outline {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: rgb(var(--color-foreground) / 1);
+}
+
+.dark .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgb(var(--color-brand-500) / 0.5);
+  color: rgb(var(--color-brand-300) / 1);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.8rem;
+  font-weight: 600;
+  border-radius: calc(var(--radius-md, 16px) - 6px);
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: rgb(var(--color-foreground) / 1);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-ghost:hover {
+  background-color: rgb(var(--color-brand-50) / 1);
+  color: rgb(var(--color-brand-600) / 1);
+  border-color: rgb(var(--color-brand-200) / 0.6);
+}
+
+.btn-ghost:focus-visible {
+  outline: none;
+  border-color: rgb(var(--color-brand-300) / 0.8);
+  box-shadow: 0 0 0 3px rgb(var(--color-brand-200) / 0.45);
+}
+
+.dark .btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgb(var(--color-brand-200) / 1);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.card-surface {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgb(var(--color-surface) / 1);
+  padding: 1.5rem;
+  box-shadow: 0 24px 40px -32px rgb(var(--color-shadow) / 0.45);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border-radius: var(--radius-lg, 24px);
+}
+
+.card-surface:hover {
+  box-shadow: 0 28px 55px -30px rgb(var(--color-shadow) / 0.5);
+}
+
+.input {
+  width: 100%;
+  border-radius: calc(var(--radius-md, 16px) - 4px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+:root{--color-brand-50:255 251 246;--color-brand-100:253 226 186;--color-brand-200:252 210 146;--color-brand-300:251 193 107;--color-brand-400:250 177 67;--color-brand-500:249 160 27;--color-brand-600:229 140 6;--color-brand-700:189 115 5;--color-brand-800:150 91 4;--color-brand-900:110 67 3;--color-brand-950:70 43 2;--color-brand-foreground:255 255 255;--color-accent-100:167 237 248;--color-accent-200:119 228 245;--color-accent-300:81 220 242;--color-accent-400:53 215 239;--color-accent-500:34 211 238;--color-accent-600:15 172 196;--color-accent-foreground:15 23 42;--color-neutral-50:248 250 252;--color-neutral-900:15 23 42;--font-heading:ClashDisplay-Variable;--font-body:Inter;--radius-sm:8px;--radius-md:16px;--radius-lg:24px}</style>
+</head>
+<body class="bg-background text-foreground antialiased">
+<div id="preview-export-root"><div class="landing-renderer space-y-16"><!--[--><section class="relative overflow-hidden rounded-[32px] bg-gradient-to-b from-slate-950 via-slate-900 to-black px-6 py-16 text-white shadow-2xl sm:px-10 landing-section landing-background--default" data-section-style="default" data-v-c517c5e3><div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.22),_transparent_70%)]" data-v-c517c5e3></div><div class="mx-auto flex w-full max-w-4xl flex-col items-center gap-8 text-center" data-v-c517c5e3><div class="inline-flex items-center gap-2 rounded-full px-5 py-2 font-heading text-sm uppercase tracking-[0.25em] text-amber-300" data-v-c517c5e3><img src="uploads/5/1760418805077-0bde53f8-0995-4a15-a233-e6d456d34605.png" alt="Logotipo" class="w-auto" style="height:200px;" loading="lazy" data-v-c517c5e3><!----></div><p class="max-w-2xl text-base text-white/80 sm:text-lg" data-v-c517c5e3>Transforma tu dolor en poder y tu éxito en plenitud</p><h1 class="max-w-3xl font-heading text-4xl font-semibold leading-tight text-white sm:text-5xl" data-v-c517c5e3>Reprograma tu mente, sana tu alma,alínea tu cuerpo y crea abundancia real.</h1><!----><div class="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-hero" data-v-c517c5e3><div class="aspect-video w-full" data-v-c517c5e3><iframe title="Video de presentación" src="https://www.youtube.com/embed/ZLJ1IooGA10?si=AMim4efKYNWoD9-3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="h-full w-full" data-v-c517c5e3></iframe></div></div></div></section><section class="relative overflow-hidden rounded-[32px] bg-gradient-to-b from-rose-950 via-rose-900 to-slate-950 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--surface" data-section-style="surface" data-v-c9cdbcf4><div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(244,114,182,0.18),_transparent_70%)]" data-v-c9cdbcf4></div><div class="mx-auto flex w-full max-w-5xl flex-col items-center gap-8 text-center" data-v-c9cdbcf4><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-rose-200" data-v-c9cdbcf4><span class="iconify i-solar:heart-bold-duotone size-4" aria-hidden="true" style="" data-v-c9cdbcf4></span> CONECTA CON TU VERDAD</div><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-c9cdbcf4>&quot;TE PASA QUE...&quot;</h2><!----><!----><ul class="grid w-full gap-4 text-left sm:grid-cols-2" data-v-c9cdbcf4><!--[--><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Sientes que lograste mucho… pero aun así hay un vacío.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Estás cansada de correr, hacer, producir… y seguir sintiendo que no es suficiente.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Tu mente no para: ansiedad, autosabotaje, miedo a exponerte o a que te juzguen.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Ganas bien, pero no puedes sostenerlo. El dinero se va, lo regalas, lo culpabilizas.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Pones a todos primero y tus límites son cada vez más blandos.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Tus hábitos son inconstantes: una semana con foco total, otra en parálisis.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Sientes que tu fe está viva… pero no sabes cómo llevarla a decisiones concretas.</p></li><li class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft" data-v-c9cdbcf4><span class="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-emerald-400/20 text-sm text-emerald-200" data-v-c9cdbcf4>✓</span><p class="text-sm text-white/85" data-v-c9cdbcf4>Tu cuerpo no acompaña: poca energía, agotamiento, descuido, cero presencia.</p></li><!--]--></ul><div class="max-w-3xl space-y-3 text-base text-white/80 sm:text-lg" data-v-c9cdbcf4><!--[--><p data-v-c9cdbcf4>Y aunque nadie lo note, dentro de ti hay un pensamiento que no se calla: “Ya debería estar más lejos.”</p><p data-v-c9cdbcf4>Este programa existe para que eso deje de ser un pensamiento… y se convierta en tu realidad.</p><!--]--></div><div class="pt-4" data-v-c9cdbcf4><a href="#" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-rose-100" data-v-c9cdbcf4>Inscribirme ahora <span class="iconify i-solar:arrow-right-up-line-duotone size-5" aria-hidden="true" style="" data-v-c9cdbcf4></span></a></div></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-900 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--default" data-section-style="default" data-v-57fb911c><div class="lg:grid-cols-1 max-w-3xl mx-auto grid w-full max-w-6xl gap-12" data-v-57fb911c><div class="mx-auto text-center lg:max-w-2xl space-y-6" data-v-57fb911c><!----><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-57fb911c>IMAGINA SI ESTO SE VOLVIERA TU VIDA</h2><!----><ul class="mx-auto max-w-3xl space-y-4" data-v-57fb911c><!--[--><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Te despiertas con calma, energía y propósito, sin ansiedad ni culpa.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Sabes exactamente qué decisiones tomar y desde dónde tomarlas.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Dejaste de autosabotearte y empezaste a accionar con foco y estrategia.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Tu espiritualidad no se queda en palabras: guía tus decisiones y resultados.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Tu cuerpo se siente fuerte, vital y preparado para sostener tu éxito.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Tus finanzas son estables, abundantes y sin drama.</p></li><!--]--></ul><div class="text-center space-y-3 rounded-3xl border border-white/10 bg-black/30 p-6" data-v-57fb911c><p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-200" data-v-57fb911c>No es magia.</p><!--[--><p class="text-base text-white/85" data-v-57fb911c>Es el resultado de trabajar en orden y profundidad:</p><p class="text-base text-white/85" data-v-57fb911c>mente → espíritu → cuerpo → finanzas</p><!--]--></div></div><!----></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--surface" data-section-style="surface" data-v-666559fe><div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center" data-v-666559fe><div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft" data-v-666559fe><div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.18),_transparent_70%)]" data-v-666559fe></div><img src="uploads/5/1760422263912-7ef0b681-9ec7-4a88-bf76-653c54d530a6.png" alt="Hola, soy Amparo Moles " class="aspect-[3/4] w-full rounded-2xl object-cover object-center" data-v-666559fe><!----></div><div class="space-y-6" data-v-666559fe><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-sky-200" data-v-666559fe><span class="iconify i-solar:compass-bold-duotone size-4" aria-hidden="true" style="" data-v-666559fe></span> LA HISTORIA DETRÁS DE ESTE MÉTODO</div><div class="space-y-3" data-v-666559fe><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-666559fe>Hola, soy Amparo Moles </h2><p class="text-base text-white/80 sm:text-lg" data-v-666559fe>Caí desde un quinto piso y sobreviví.</p></div><div class="space-y-4 text-base text-white/80" data-v-666559fe><!--[--><p data-v-666559fe>Ese fue el instante que cambió mi historia: entendí que estar viva era una oportunidad, no un accidente. Emigré con las manos vacías, sin contactos ni certezas, pero con una decisión firme: no volver a vivir desde el miedo.
+Con fe, disciplina y acción, construí empresas exitosas en Estados Unidos y acompaño a cientos de mujeres en su transformación.
+Hoy mi misión es simple: mostrarte que el dolor no es un límite, sino un trampolín. Que no necesitas ser perfecta para vivir en plenitud. Solo necesitas decidirte a dejar de sobrevivir.</p><p data-v-666559fe>No quiero que vivas el dolor que yo viví. Quiero enseñarte lo que aprendí entre lágrimas y fe. Quiero que experimentes plenitud, gozo y propósito. Que dejes de trabajar desde la escasez y comiences a vivir desde la abundancia.</p><!--]--></div><!----><!----><div class="flex flex-wrap items-center gap-4" data-v-666559fe><a href="#" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-amber-100" data-v-666559fe>Inscribirme <span class="iconify i-solar:play-bold-duotone size-5" aria-hidden="true" style="" data-v-666559fe></span></a><!----></div></div></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-b from-slate-950 via-zinc-950 to-slate-950 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--default" data-section-style="default" data-v-0a372cd0><div class="items-center text-center mx-auto flex w-full max-w-6xl flex-col gap-16" data-v-0a372cd0><header class="space-y-4 text-center" data-v-0a372cd0><div class="mx-auto inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-amber-200" data-v-0a372cd0><span class="iconify i-solar:radar-bold-duotone size-4" aria-hidden="true" style="" data-v-0a372cd0></span> QUÉ ES INDOMISMO HUMANO</div><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-0a372cd0>Un sistema de transformación integral en 56 días</h2><div class="mx-auto max-w-3xl space-y-4 text-base text-white/80 sm:text-lg" data-v-0a372cd0><!--[--><p class="leading-relaxed" style="text-align:justify;" data-v-0a372cd0>Indomismo Humano no es un curso, es una filosofía de vida, diseñado para mujeres que ya han logrado cosas, pero sienten que aún no están viviendo en su máximo poder. Aquí no vas a aprender más teoría. Vas a reconectar con tu poder, sanar patrones que no ves, alinear tu mente con tu dinero y aprender a sostener abundancia con plenitud. Porque el éxito real no se trata de trabajar más, sino de vivir desde tu versión más elevada. Este método trabaja en las cuatro dimensiones que sostienen tu expansión:</p><!--]--></div></header><div class="max-w-5xl grid gap-10" data-v-0a372cd0><div class="md:grid md:grid-cols-2 md:gap-6 md:space-y-0 space-y-6" data-v-0a372cd0><!--[--><section class="text-left md:text-left md:h-full md:flex md:flex-col md:justify-between rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft" data-v-0a372cd0><div class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-200" data-v-0a372cd0><!----><span data-v-0a372cd0>MENTE</span></div><ul class="mt-4 space-y-3 text-sm text-white/85" data-v-0a372cd0><!--[--><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Reprograma creencias, crea estándares y toma decisiones valientes.</span></li><!--]--></ul></section><section class="text-left md:text-left md:h-full md:flex md:flex-col md:justify-between rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft" data-v-0a372cd0><div class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-200" data-v-0a372cd0><!----><span data-v-0a372cd0>ESPÍRITU</span></div><ul class="mt-4 space-y-3 text-sm text-white/85" data-v-0a372cd0><!--[--><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Sana patrones invisibles, libera las culpas y conecta con tu propósito.</span></li><!--]--></ul></section><section class="text-left md:text-left md:h-full md:flex md:flex-col md:justify-between rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft" data-v-0a372cd0><div class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-200" data-v-0a372cd0><!----><span data-v-0a372cd0>CUERPO</span></div><ul class="mt-4 space-y-3 text-sm text-white/85" data-v-0a372cd0><!--[--><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Alinea tu energía, mejora tu bienestar y proyecta liderazgo.</span></li><!--]--></ul></section><section class="text-left md:text-left md:h-full md:flex md:flex-col md:justify-between rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft" data-v-0a372cd0><div class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-200" data-v-0a372cd0><!----><span data-v-0a372cd0>DINERO</span></div><ul class="mt-4 space-y-3 text-sm text-white/85" data-v-0a372cd0><!--[--><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Construye abundancia real con estrategia y sin culpa.</span></li><!--]--></ul></section><!--]--></div><!----></div></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-b from-slate-950 via-zinc-950 to-slate-950 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--surface" data-section-style="surface" data-v-0a372cd0><div class="items-center mx-auto flex w-full max-w-6xl flex-col gap-16" data-v-0a372cd0><header class="space-y-4 text-center" data-v-0a372cd0><div class="mx-auto inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-amber-200" data-v-0a372cd0><span class="iconify i-solar:radar-bold-duotone size-4" aria-hidden="true" style="" data-v-0a372cd0></span> ESTE ES TU CAMINO DE TRANSFORMACIÓN</div><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-0a372cd0></h2><!----></header><div class="w-full max-w-5xl space-y-6 text-left" data-v-0a372cd0><!--[--><article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft" data-v-0a372cd0><div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between" data-v-0a372cd0><div class="space-y-3" data-v-0a372cd0><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-indigo-200" data-v-0a372cd0><span data-v-0a372cd0>Módulo 1</span><!----></div><h3 class="font-heading text-2xl font-semibold text-white sm:text-3xl" data-v-0a372cd0>MENTALIDAD INDÓMITA &amp; REPROGRAMACIÓN INTERNA</h3><!----></div><button type="button" class="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:border-white/30 hover:bg-white/10" aria-expanded="true" data-v-0a372cd0><span data-v-0a372cd0>Ocultar contenidos</span><span class="iconify i-solar:alt-arrow-down-bold size-4 transition rotate-180" aria-hidden="true" style="" data-v-0a372cd0></span></button></div><div class="mt-6 space-y-4 text-base text-white/85 leading-relaxed" data-v-0a372cd0><!--[--><p style="text-align:justify;" data-v-0a372cd0>REl poder de creer: cómo tus pensamientos moldean tu realidad.</p><!--]--></div><div class="mt-8 space-y-4" data-v-0a372cd0><p class="text-xs font-semibold uppercase tracking-[0.35em] text-amber-200" data-v-0a372cd0> Temas que trabajamos </p><ul class="space-y-3 text-sm text-white/85" data-v-0a372cd0><!--[--><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Creencias limitantes vs. creencias expansivas: detectarlas y transformarlas.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Neuroplasticidad y reprogramación: cómo cambiar tu mente desde adentro.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>El poder de la fe: decisiones sostenidas en convicción.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Acciónompe patrones mentales y emocionales que sabotean tu crecimiento. Crea una nueva estructura interna de pensamiento basada en disciplina, acción, fe y mentalidad de abundancia.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>La clave para materializar resultados.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>El miedo como combustible: dejar de huir y empezar a avanzar.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Psicología del éxito: cómo piensa una mujer indómita.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Palabras que crean realidades: cómo hablarte de forma expansiva.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Mentalidad de abundancia: abrir espacio para “más”.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Ley de la atracción aplicada a la acción.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Cómo sostener hábitos mentales a largo plazo.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Estándares personales no negociables.</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>El arte de escuchar</span></li><li class="flex items-start gap-3" data-v-0a372cd0><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-0a372cd0></span><span data-v-0a372cd0>Plan de acción mental para los próximos 90 días.</span></li><!--]--></ul></div></article><article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft" data-v-0a372cd0><div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between" data-v-0a372cd0><div class="space-y-3" data-v-0a372cd0><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-indigo-200" data-v-0a372cd0><span data-v-0a372cd0>Módulo 2</span><!----></div><h3 class="font-heading text-2xl font-semibold text-white sm:text-3xl" data-v-0a372cd0>ESPIRITUALIDAD APLICADA &amp; SANACIÓN DE PATRONES</h3><!----></div><button type="button" class="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:border-white/30 hover:bg-white/10" aria-expanded="false" data-v-0a372cd0><span data-v-0a372cd0>Ver contenidos</span><span class="iconify i-solar:alt-arrow-down-bold size-4 transition" aria-hidden="true" style="" data-v-0a372cd0></span></button></div><div class="mt-6 space-y-4 text-base text-white/85 leading-relaxed" data-v-0a372cd0><!--[--><p style="text-align:justify;" data-v-0a372cd0>Sana el “plano invisible” que frena tu crecimiento: patrones familiares, emociones bloqueadas, culpa y autosabotaje. Integra tu espiritualidad a la vida diaria como guía estratégica.</p><!--]--></div><!----></article><article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft" data-v-0a372cd0><div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between" data-v-0a372cd0><div class="space-y-3" data-v-0a372cd0><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-indigo-200" data-v-0a372cd0><span data-v-0a372cd0>Módulo 3</span><!----></div><h3 class="font-heading text-2xl font-semibold text-white sm:text-3xl" data-v-0a372cd0>CUERPO, ENERGÍA &amp; BIENESTAR EXPANSIVO</h3><!----></div><button type="button" class="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:border-white/30 hover:bg-white/10" aria-expanded="false" data-v-0a372cd0><span data-v-0a372cd0>Ver contenidos</span><span class="iconify i-solar:alt-arrow-down-bold size-4 transition" aria-hidden="true" style="" data-v-0a372cd0></span></button></div><div class="mt-6 space-y-4 text-base text-white/85 leading-relaxed" data-v-0a372cd0><!--[--><p style="text-align:justify;" data-v-0a372cd0>Alinea tu cuerpo con la visión de éxito, optimiza tu energía y proyecta liderazgo desde la presencia física.</p><!--]--></div><!----></article><article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft" data-v-0a372cd0><div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between" data-v-0a372cd0><div class="space-y-3" data-v-0a372cd0><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-indigo-200" data-v-0a372cd0><span data-v-0a372cd0>Módulo 4</span><!----></div><h3 class="font-heading text-2xl font-semibold text-white sm:text-3xl" data-v-0a372cd0>FINANZAS CONSCIENTES &amp; ABUNDANCIA SOSTENIBLE</h3><!----></div><button type="button" class="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:border-white/30 hover:bg-white/10" aria-expanded="false" data-v-0a372cd0><span data-v-0a372cd0>Ver contenidos</span><span class="iconify i-solar:alt-arrow-down-bold size-4 transition" aria-hidden="true" style="" data-v-0a372cd0></span></button></div><div class="mt-6 space-y-4 text-base text-white/85 leading-relaxed" data-v-0a372cd0><!--[--><p style="text-align:justify;" data-v-0a372cd0>Transforma tu relación con el dinero, crea sistemas financieros simples y escala ingresos sin ansiedad ni culpa.</p><!--]--></div><!----></article><!--]--><!----></div></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-900 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--default" data-section-style="default" data-v-57fb911c><div class="lg:grid-cols-1 max-w-3xl mx-auto grid w-full max-w-6xl gap-12" data-v-57fb911c><div class="mx-auto text-center lg:max-w-2xl space-y-6" data-v-57fb911c><div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-indigo-200" data-v-57fb911c><span class="iconify i-solar:sun-2-bold-duotone size-4" aria-hidden="true" style="" data-v-57fb911c></span> ESTE PROGRAMA ES PARA TI SI…</div><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-57fb911c></h2><!----><ul class="mx-auto max-w-3xl space-y-4" data-v-57fb911c><!--[--><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Sientes que tienes logros, pero no plenitud..</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Quieres sostener tu éxito sin ansiedad.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Deseas vivir con propósito, no solo con facturación.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Buscás orden, coherencia y expansión real.</p></li><li class="flex-col items-center gap-3 text-center flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft" data-v-57fb911c><span class="mt-0 mt-1 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-xl text-amber-200" data-v-57fb911c>★</span><p class="text-sm text-white/90" data-v-57fb911c>Estás lista para crecer en mente, espíritu, cuerpo y finanzas.</p></li><!--]--></ul><!----></div><!----></div></section><section class="overflow-hidden rounded-[32px] bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-900 px-6 py-20 text-white shadow-2xl sm:px-10 landing-section landing-background--surface" data-section-style="surface" data-v-57fb911c><div class="lg:grid-cols-[1.1fr_0.9fr] lg:items-center mx-auto grid w-full max-w-6xl gap-12" data-v-57fb911c><div class="space-y-6" data-v-57fb911c><!----><h2 class="font-heading text-3xl font-semibold leading-tight sm:text-4xl" data-v-57fb911c>NO ES PARA TI SI…</h2><!----><ul class="space-y-4" data-v-57fb911c><!--[--><!--]--></ul><!----></div><div class="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft" data-v-57fb911c><!----><div class="space-y-4 text-sm text-white/85" data-v-57fb911c><!--[--><p class="flex items-start gap-3" data-v-57fb911c><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-57fb911c></span><span data-v-57fb911c>Quieres resultados mágicos sin trabajo interno.</span></p><p class="flex items-start gap-3" data-v-57fb911c><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-57fb911c></span><span data-v-57fb911c>No estás dispuesta a comprometerte con tu proceso.</span></p><p class="flex items-start gap-3" data-v-57fb911c><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-57fb911c></span><span data-v-57fb911c>Prefieres seguir en el modo “hacer sin estrategia”.</span></p><p class="flex items-start gap-3" data-v-57fb911c><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-57fb911c></span><span data-v-57fb911c>Crees que ya lo sabes todo y no estas dispuesta a cuestionarte.</span></p><p class="flex items-start gap-3" data-v-57fb911c><span class="mt-1 size-2 shrink-0 rounded-full bg-amber-300" data-v-57fb911c></span><span data-v-57fb911c>Prefieres culpar al pasado en vez de tomar responsabilidad.</span></p><!--]--></div><!----></div></div></section><section id="features" class="px-6 py-20 landing-section landing-background--default" data-section-style="default"><div class="mx-auto flex w-full max-w-6xl flex-col gap-12"><header class="max-w-3xl space-y-4"><!----><h2 class="font-heading text-3xl font-semibold text-foreground sm:text-4xl">LA EXPERIENCIA INDOMISMO HUMANO</h2><!----></header><div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"><!--[--><article class="group flex h-full flex-col rounded-3xl border border-white/10 bg-surface/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"><div class="flex size-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition group-hover:bg-brand group-hover:text-white"><span class="iconify i-heroicons:shield-check-solid size-6" aria-hidden="true" style=""></span></div><h3 class="mt-6 font-heading text-xl font-semibold text-foreground">56 días de transformación total</h3><!----><!----></article><article class="group flex h-full flex-col rounded-3xl border border-white/10 bg-surface/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"><div class="flex size-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition group-hover:bg-brand group-hover:text-white"><span class="iconify i-heroicons:shield-check-solid size-6" aria-hidden="true" style=""></span></div><h3 class="mt-6 font-heading text-xl font-semibold text-foreground">LA EXPERIENCIA INDOMISMO HUMANO</h3><!----><!----></article><article class="group flex h-full flex-col rounded-3xl border border-white/10 bg-surface/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"><div class="flex size-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition group-hover:bg-brand group-hover:text-white"><span class="iconify i-heroicons:shield-check-solid size-6" aria-hidden="true" style=""></span></div><h3 class="mt-6 font-heading text-xl font-semibold text-foreground">Comunidad y acompañamiento</h3><!----><!----></article><article class="group flex h-full flex-col rounded-3xl border border-white/10 bg-surface/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-lg"><div class="flex size-12 items-center justify-center rounded-2xl bg-brand/10 text-brand transition group-hover:bg-brand group-hover:text-white"><span class="iconify i-heroicons:shield-check-solid size-6" aria-hidden="true" style=""></span></div><h3 class="mt-6 font-heading text-xl font-semibold text-foreground">Guías paso a paso y materiales descargables</h3><!----><!----></article><!--]--></div><div class="max-w-3xl space-y-3 text-base text-foreground"><!--[--><p>No es un curso más.</p><p>Es el mapa para la mujer que quiere plenitud con crecimiento, abundancia con propósito y éxito con alma.</p><!--]--></div></div></section><section id="cases" class="px-6 py-20 landing-section landing-background--surface" data-section-style="surface"><div class="mx-auto flex w-full max-w-6xl flex-col gap-12"><header class="max-w-2xl space-y-4"><span class="inline-flex items-center gap-2 rounded-full bg-surface/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-foreground-muted"><span class="iconify i-solar:users-group-rounded-bold-duotone size-4" aria-hidden="true" style=""></span> Historias de éxito</span><h2 class="font-heading text-3xl font-semibold text-foreground">Así cambió su vida con este programa</h2><!----></header><div class="grid gap-6 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]"><!--[--><article class="flex h-full flex-col rounded-3xl border border-white/10 bg-surface/90 p-6 shadow-soft"><!----><div class="mt-6 flex items-center gap-3"><div class="flex size-12 items-center justify-center rounded-full bg-brand/10 font-semibold uppercase text-brand">T1</div><div class="flex-1"><p class="font-semibold text-foreground">Testimonio 1</p><!----></div></div><div class="mt-6 space-y-3"><div class="relative overflow-hidden rounded-3xl bg-black"><div class="w-full aspect-[9/16]"><button type="button" class="group relative flex h-full w-full items-center justify-center"><img src="https://img.youtube.com/vi/sQKBEFg1FRo/hqdefault.jpg" alt="Vista previa de Ver testimonio" class="absolute inset-0 h-full w-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 transition group-hover:from-black/50 group-hover:via-black/35 group-hover:to-black/50"></div><div class="relative inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-black shadow-lg transition group-hover:bg-white"><span class="iconify i-solar:play-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span> Ver testimonio</div></button></div><!----></div><!----></div></article><article class="flex h-full flex-col rounded-3xl border border-white/10 bg-surface/90 p-6 shadow-soft"><!----><div class="mt-6 flex items-center gap-3"><div class="flex size-12 items-center justify-center rounded-full bg-brand/10 font-semibold uppercase text-brand">T1</div><div class="flex-1"><p class="font-semibold text-foreground">Testimonio 1</p><!----></div></div><div class="mt-6 space-y-3"><div class="relative overflow-hidden rounded-3xl bg-black"><div class="w-full aspect-[9/16]"><button type="button" class="group relative flex h-full w-full items-center justify-center"><img src="https://img.youtube.com/vi/sQKBEFg1FRo/hqdefault.jpg" alt="Vista previa de Ver testimonio" class="absolute inset-0 h-full w-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 transition group-hover:from-black/50 group-hover:via-black/35 group-hover:to-black/50"></div><div class="relative inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-black shadow-lg transition group-hover:bg-white"><span class="iconify i-solar:play-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span> Ver testimonio</div></button></div><!----></div><!----></div></article><article class="flex h-full flex-col rounded-3xl border border-white/10 bg-surface/90 p-6 shadow-soft"><!----><div class="mt-6 flex items-center gap-3"><div class="flex size-12 items-center justify-center rounded-full bg-brand/10 font-semibold uppercase text-brand">T3</div><div class="flex-1"><p class="font-semibold text-foreground">Testimonio 3</p><!----></div></div><div class="mt-6 space-y-3"><div class="relative overflow-hidden rounded-3xl bg-black"><div class="w-full aspect-[9/16]"><button type="button" class="group relative flex h-full w-full items-center justify-center"><img src="https://img.youtube.com/vi/sQKBEFg1FRo/hqdefault.jpg" alt="Vista previa de Ver testimonio" class="absolute inset-0 h-full w-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 transition group-hover:from-black/50 group-hover:via-black/35 group-hover:to-black/50"></div><div class="relative inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-black shadow-lg transition group-hover:bg-white"><span class="iconify i-solar:play-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span> Ver testimonio</div></button></div><!----></div><!----></div></article><article class="flex h-full flex-col rounded-3xl border border-white/10 bg-surface/90 p-6 shadow-soft"><!----><div class="mt-6 flex items-center gap-3"><div class="flex size-12 items-center justify-center rounded-full bg-brand/10 font-semibold uppercase text-brand">T4</div><div class="flex-1"><p class="font-semibold text-foreground">Testimonio 4</p><!----></div></div><div class="mt-6 space-y-3"><div class="relative overflow-hidden rounded-3xl bg-black"><div class="w-full aspect-[9/16]"><button type="button" class="group relative flex h-full w-full items-center justify-center"><img src="https://img.youtube.com/vi/sQKBEFg1FRo/hqdefault.jpg" alt="Vista previa de Ver testimonio" class="absolute inset-0 h-full w-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 transition group-hover:from-black/50 group-hover:via-black/35 group-hover:to-black/50"></div><div class="relative inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-black shadow-lg transition group-hover:bg-white"><span class="iconify i-solar:play-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span> Ver testimonio</div></button></div><!----></div><!----></div></article><!--]--></div></div></section><section id="pricing" class="px-6 py-20 landing-section landing-background--default" data-section-style="default"><div class="mx-auto flex w-full max-w-6xl flex-col gap-12"><header class="space-y-4 mx-auto max-w-3xl text-center"><span class="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-brand mx-auto"><span class="iconify i-solar:wallet-money-bold-duotone size-4" aria-hidden="true" style=""></span> Planes</span><h2 class="font-heading text-3xl font-semibold text-foreground mx-auto max-w-2xl">¿LISTA PARA TU REINVENCIÓN?</h2><p class="text-base text-foreground-muted mx-auto max-w-2xl">No necesitas más estrategias.
+Necesitas una estructura interna que sostenga tu próxima versión.</p></header><div class="flex justify-center"><!--[--><article class="flex w-full flex-col gap-6 rounded-3xl border border-white/10 bg-surface/80 p-8 shadow-soft transition max-w-xl items-center text-center"><div class="space-y-2"><!----><h3 class="font-heading text-2xl font-semibold text-foreground">Transformación Acelerada en 8 Semanas</h3><!----></div><div class="space-y-1"><p class="font-heading text-4xl font-semibold text-foreground">$2500</p><p class="text-sm font-medium text-foreground-muted">Pago único</p></div><ul class="flex flex-1 flex-col gap-3 text-sm text-foreground-muted items-center text-center"><!--[--><li class="flex gap-2 items-center justify-center"><span class="iconify i-solar:check-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span><span class="max-w-lg">Liberación rápida</span></li><li class="flex gap-2 items-center justify-center"><span class="iconify i-solar:check-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span><span class="max-w-lg">Resultados medibles</span></li><li class="flex gap-2 items-center justify-center"><span class="iconify i-solar:check-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span><span class="max-w-lg">Transformación permanente</span></li><li class="flex gap-2 items-center justify-center"><span class="iconify i-solar:check-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span><span class="max-w-lg">Método probado</span></li><li class="flex gap-2 items-center justify-center"><span class="iconify i-solar:check-circle-bold-duotone size-5 text-brand" aria-hidden="true" style=""></span><span class="max-w-lg">Seguimiento diario y acompañamiento personalizado</span></li><!--]--></ul><a href="#" class="inline-flex items-center justify-center gap-2 rounded-lg border border-brand bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:border-brand-600 hover:bg-brand-600">Quiero dejar de sobrevivir mi éxito y empezar a sostenerlo.</a></article><!--]--></div></div></section><!--]--></div></div>
+</body>
+</html>
